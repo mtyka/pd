@@ -1,0 +1,30 @@
+
+ffps = FFParamSet()
+ffps.readlib("../lib/amber03aa.ff")
+
+def createff(psystem):
+  ff = Forcefield(psystem)
+
+  bonds = BondedForcefield()
+  nb    = NonBondedForcefield()
+
+  nb.cutoff = 12.0
+  nb.innercutoff =  9.0
+
+  gb    = GB_Forcefield( nb )
+
+  sasa  = SASA_Forcefield()
+  sasa.globalASP = 0.005
+
+  ff.add( bonds )
+  ff.add( nb )
+  ff.add( gb )
+  ff.add( sasa )
+
+  return ff
+
+
+
+
+
+

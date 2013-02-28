@@ -1,0 +1,36 @@
+
+## Minimise for a few steps first
+min = Minimisation(ff)
+min.steps = 250
+min.update_scr  =  25
+min.update_tra  = 0
+min.run()
+
+## Set up a Replica Exchange Simulation (Local)
+## First set up a template MD simulation
+md = MolecularDynamics(ff)
+md.timestep   = 1.00E-15
+md.update_nlist = 10
+md.integrator = MolecularDynamics.Langevin
+md.thermostat = MolecularDynamics.ConstantEnergy
+
+remd = LocalREMD(ff)
+remd.nsteps = 1000         ## run 10000 steps / replica
+remd.update_scr = 1        ## Print after every exchange
+remd.update_tra = 25       ## Record two structures per exchange cycle     
+remd.nexchangefreq =  50   ## Exhcnage structures every 50 steps
+remd.focusrep = 0          ## Out temperature of interest is the first temp
+
+remd.addReplic(md,300 )
+remd.addReplic(md,321 )
+remd.addReplic(md,343 )
+remd.addReplic(md,368 )
+remd.addReplic(md,393 )
+remd.addReplic(md,421 )
+remd.addReplic(md,450 )
+remd.addReplic(md,482 )
+remd.addReplic(md,515 )
+remd.addReplic(md,552 )
+
+remd.run()
+

@@ -1,0 +1,245 @@
+
+TYPE    CTL2       6    12.01    2.0100    0.0560   0.0000   # ! carbon of methylene group (-CH2-) 
+TYPE    CTL3       6    12.01    2.0400    0.0780   0.0000   # ! carbon of methyl group (-CH3) 
+TYPE    HAL2       1     1.01    1.3400    0.0280   0.0000   # ! alphatic proton 
+TYPE    HAL3       1     1.01    1.3400    0.0240   0.0000   # ! alphatic proton 
+TYPE    HEL1       1     1.01    1.2500    0.0310   0.0000   # ! for alkene; RHC=CR 
+TYPE    CEL1       6    12.01    2.0900    0.0680   0.0000   # ! for alkene; RHC=CR 
+TYPE    OHL        8    16.00    1.7700    0.1521   0.0000   # ! hydroxyl oxygen 
+TYPE    HOL        1     1.01    0.2245    0.0460   0.0000   # ! hydroxyl proton 
+
+
+SECTION  SOLVATION_GENERALISED_BORN
+	SOLVATIONTYPE   CTL2 	    1.8750   	 
+	SOLVATIONTYPE   CTL3 	    1.8750   	 
+	SOLVATIONTYPE   HAL2 	    1.1500	 
+	SOLVATIONTYPE   HAL3 	    1.1500	 
+	SOLVATIONTYPE   HEL1 	    1.1500	 
+	SOLVATIONTYPE   CEL1 	    1.8750   	 
+	SOLVATIONTYPE   OHL  	    1.5350	 
+	SOLVATIONTYPE   HOL  	    1.1500	 
+ENDSECTION
+	
+SECTION  LCPOSASAPARAMETERS
+        #          Name     Neighbors     Radius                  P1          P2           P3         P4
+	LCPOSASATYPE   CTL2   2          1.7000   	  5.6482e-01 -1.9608e-01 -1.0219e-03 2.6580e-04 
+	LCPOSASATYPE   CTL3   1          1.7000   	  7.7887e-01 -2.8063e-01 -1.2968e-03 3.9328e-04 
+	LCPOSASATYPE   HAL2   -1   	0.0000    	  0.0000e+00  0.0000e+00  0.0000e+00 0.0000e+00  
+	LCPOSASATYPE   HAL3   -1   	0.0000    	  0.0000e+00  0.0000e+00  0.0000e+00 0.0000e+00  
+	LCPOSASATYPE   HEL1   -1   	0.0000    	  0.0000e+00  0.0000e+00  0.0000e+00 0.0000e+00  
+	LCPOSASATYPE   CEL1   2          1.7000   	  5.6482e-01 -1.9608e-01 -1.0219e-03 2.6580e-04 
+	LCPOSASATYPE   OHL    1    	1.6000    	  7.7914e-01 -2.5262e-01 -1.6056e-03 3.5071e-04 
+	LCPOSASATYPE   HOL    -1   	0.0000    	  0.0000e+00  0.0000e+00  0.0000e+00 0.0000e+00  
+ENDSECTION
+
+
+BOND      HOL       OHL     0.960     545.0  1.0   # ! acetic acid 
+BOND     CTL2      HAL2     1.111    309.00  1.0   # ! alkanes, 4/98 
+BOND     CTL3      HAL3     1.111    322.00  1.0   # ! alkanes, 4/98 
+BOND     CTL2      CTL2     1.530   222.500  1.0   # ! alkanes, 3/92 
+BOND     CTL2      CTL3     1.528   222.500  1.0   # ! alkanes, 3/92 
+BOND     CTL3      CTL3     1.530   222.500  1.0   # ! alkanes, 3/92 
+BOND      OHL      CTL2     1.420     428.0  1.0   # !  glycerol 
+BOND      OHL      CTL3     1.420     428.0  1.0   # !  glycerol 
+BOND     CEL1      CTL3     1.504   383.000  1.0   # ! butene, yin,adm jr., 12/95 
+BOND     HEL1      CEL1     1.100   360.500  1.0   # ! propene, yin,adm jr., 12/95 
+BOND     CEL1      CTL2     1.502   365.000  1.0   # ! butene; from propene, yin,adm jr., 12/95 
+BOND     CEL1      CEL1     1.340   440.000  1.0   # ! butene, yin,adm jr., 12/95 
+
+#  
+# ! 
+# !V(angle) = Ktheta(Theta - Theta0)**2 
+# ! 
+# !V(Urey-Bradley) = Kub(S - S0)**2 
+# ! 
+# !Ktheta: kcal/mole/rad**2 
+# !Theta0: degrees 
+# !Kub: kcal/mole/A**2 (Urey-Bradley) 
+# !S0: A 
+# ! 
+# !atom types     Ktheta    Theta0   Kub     S0 
+# ! 
+# ! 
+## WARNING: PD does not currently support Urey - Bradley Angle Terms 
+## HAL2 CTL2 HAL2   35.500    109.00    5.40   1.80200 ! alkane, 3/92
+ANGLE     HAL2      CTL2      HAL2    109.00    35.500   # ! alkane, 3/92 
+## WARNING: PD does not currently support Urey - Bradley Angle Terms 
+## HAL3 CTL3 HAL3   35.500    108.40    5.40   1.80200 ! alkane, 3/92
+ANGLE     HAL3      CTL3      HAL3    108.40    35.500   # ! alkane, 3/92 
+## WARNING: PD does not currently support Urey - Bradley Angle Terms 
+## HAL2 CTL2 CTL2   26.500    110.10   22.53   2.179  ! alkane, 4/98
+ANGLE     HAL2      CTL2      CTL2    110.10    26.500   # ! alkane, 4/98 
+## WARNING: PD does not currently support Urey - Bradley Angle Terms 
+## HAL2 CTL2 CTL3   34.600    110.10   22.53   2.179  ! alkane, 4/98
+ANGLE     HAL2      CTL2      CTL3    110.10    34.600   # ! alkane, 4/98 
+## WARNING: PD does not currently support Urey - Bradley Angle Terms 
+## HAL3 CTL3 CTL2   34.600    110.10   22.53   2.179  ! alkane, 4/98
+ANGLE     HAL3      CTL3      CTL2    110.10    34.600   # ! alkane, 4/98 
+## WARNING: PD does not currently support Urey - Bradley Angle Terms 
+## HAL3 CTL3 CTL3   37.500    110.10   22.53   2.179  ! alkane, 4/98
+ANGLE     HAL3      CTL3      CTL3    110.10    37.500   # ! alkane, 4/98 
+## WARNING: PD does not currently support Urey - Bradley Angle Terms 
+## CTL2 CTL2 CTL2   58.350    113.60   11.16   2.561  ! alkane, 3/92
+ANGLE     CTL2      CTL2      CTL2    113.60    58.350   # ! alkane, 3/92 
+## WARNING: PD does not currently support Urey - Bradley Angle Terms 
+## CTL2 CTL2 CTL3   58.000    115.00    8.00   2.561  ! alkane, 3/92
+ANGLE     CTL2      CTL2      CTL3    115.00    58.000   # ! alkane, 3/92 
+ANGLE      HOL       OHL      CTL2    106.00    57.500   # ! glycerol 
+ANGLE      HOL       OHL      CTL3    106.00    57.500   # ! glycerol 
+ANGLE      OHL      CTL2      CTL2    110.10    75.700   # ! glycerol 
+ANGLE      OHL      CTL2      CTL3    110.10    75.700   # ! glycerol 
+ANGLE      OHL      CTL2      HAL2    108.89    45.900   # ! glycerol 
+ANGLE      OHL      CTL3      HAL3    108.89    45.900   # ! glycerol 
+ANGLE     CEL1      CEL1      CTL2    123.50     48.00   # ! from 2-butene, yin,adm jr., 12/95 
+ANGLE     CEL1      CEL1      CTL3    123.50     48.00   # ! 2-butene, yin,adm jr., 12/95 
+ANGLE     CEL1      CEL1      CEL1    123.50     48.00   # ! 2-butene, yin,adm jr., 12/95 
+ANGLE     HEL1      CEL1      CEL1    119.50     52.00   # ! 2-butene, yin,adm jr., 12/95 
+ANGLE     HEL1      CEL1      CTL2    116.00     40.00   # ! 1-butene; from propene, yin,adm jr., 12/95 
+ANGLE     HEL1      CEL1      CTL3    117.00     22.00   # ! propene, yin,adm jr., 12/95 
+ANGLE     CEL1      CTL2      CTL2    112.20     32.00   # ! 1-butene; from propene, yin,adm jr., 12/95 
+ANGLE     CEL1      CTL2      CTL3    112.20     32.00   # ! 1-butene; from propene, yin,adm jr., 12/95 
+ANGLE     HAL2      CTL2      CEL1    111.50     45.00   # ! 1-butene; from propene, yin,adm jr., 12/95 
+ANGLE     HAL3      CTL3      CEL1    111.50     42.00   # ! 2-butene, yin,adm jr., 12/95 
+ANGLE     CEL1      CTL2      CEL1     114.0      30.0   # ! 1,4-dipentene, adm jr., 2/00 
+
+#  
+# ! 
+# !V(dihedral) = Kchi(1 + cos(n(chi) - delta)) 
+# ! 
+# !Kchi: kcal/mole 
+# !n: multiplicity 
+# !delta: degrees 
+# ! 
+# !atom types             Kchi    n   delta 
+# ! 
+
+TORSION         X      CTL2       OHL         X      0.14      0.00         3   # ! glycerol 
+TORSION         X      CTL3       OHL         X      0.14      0.00         3   # ! glycerol 
+TORSION         X      CTL2      CTL2         X    0.1900      0.00         3   # ! alkane, 4/98, yin and mackerell 
+TORSION         X      CTL2      CTL3         X    0.1600      0.00         3   # ! alkane, 4/98, yin and mackerell 
+TORSION         X      CTL3      CTL3         X    0.1525      0.00         3   # ! alkane, 4/98, yin and mackerell 
+TORSION      CTL3      CTL2      CTL2      CTL3      0.10    180.00         2   # ! alkane, 4/98, adm jr., lower butane gauche conformer 
+TORSION      CTL3      CTL2      CTL2      CTL3      0.15      0.00         4   # ! alkane, 4/98, adm jr. 
+TORSION      CTL3      CTL2      CTL2      CTL3      0.10    180.00         6   # ! alkane, 4/98, adm jr. 
+TORSION      CTL2      CTL2      CTL2      CTL3      0.10    180.00         2   # ! alkane, 4/98, adm jr. 
+TORSION      CTL2      CTL2      CTL2      CTL3      0.15      0.00         4   # ! alkane, 4/98, adm jr. 
+TORSION      CTL2      CTL2      CTL2      CTL3      0.10    180.00         6   # ! alkane, 4/98, adm jr. 
+TORSION      CTL2      CTL2      CTL2      CTL2      0.10    180.00         2   # ! alkane, 4/98, adm jr. 
+TORSION      CTL2      CTL2      CTL2      CTL2      0.15      0.00         4   # ! alkane, 4/98, adm jr. 
+TORSION      CTL2      CTL2      CTL2      CTL2      0.10    180.00         6   # ! alkane, 4/98, adm jr. 
+TORSION      HEL1      CEL1      CEL1      HEL1    1.0000    180.00         2   # ! 2-butene, adm jr., 8/98 update 
+TORSION      CTL3      CEL1      CEL1      HEL1    1.0000    180.00         2   # ! 2-butene, adm jr., 8/98 update 
+TORSION         X      CEL1      CEL1         X    0.1500      0.00         1   # ! 2-butene, adm jr., 2/00 update 
+TORSION         X      CEL1      CEL1         X    8.5000    180.00         2   # ! 2-butene, adm jr., 2/00 update 
+TORSION      CEL1      CEL1      CTL2      HAL2    0.0300      0.00         3   # ! butene, yin,adm jr., 12/95 
+TORSION      CEL1      CEL1      CTL3      HAL3    0.0300      0.00         3   # ! butene, yin,adm jr., 12/95 
+TORSION      CEL1      CEL1      CTL2      CTL2    0.5000    180.00         1   # ! 1-butene, adm jr., 2/00 update 
+TORSION      CEL1      CEL1      CTL2      CTL2    1.3000    180.00         3   # ! 1-butene, adm jr., 2/00 update 
+TORSION      CEL1      CEL1      CTL2      CTL3    0.5000    180.00         1   # ! 1-butene, adm jr., 2/00 update 
+TORSION      CEL1      CEL1      CTL2      CTL3    1.3000    180.00         3   # ! 1-butene, adm jr., 2/00 update 
+TORSION      HEL1      CEL1      CTL2      CTL2    0.1200      0.00         3   # ! butene, yin,adm jr., 12/95 
+TORSION      HEL1      CEL1      CTL2      CTL3    0.1200      0.00         3   # ! butene, yin,adm jr., 12/95 
+TORSION      HEL1      CEL1      CTL2      HAL2    0.0000      0.00         3   # ! butene, adm jr., 2/00 update 
+TORSION      HEL1      CEL1      CTL3      HAL3    0.0000      0.00         3   # ! butene, adm jr., 2/00 update 
+
+CLASS smallmolecule BOM
+
+MOLECULE _ BOM BOM
+           ATOM    H34    H34    -2.744  31.319   2.874  HOL    O1          
+           ATOM    O1     O1     -1.744  31.301   2.886  OHL    H34,C2           
+           ATOM    C2     C2     -1.235  32.329   2.020  CTL2   O1,C4,H36,H38 
+           ATOM    H36    H36    -1.568  32.166   1.091  HAL2   C2         
+           ATOM    H38    H38    -1.564  33.217   2.341  HAL2   C2         
+           ATOM    C4     C4      0.295  32.341   2.005  CTL2   C2,C7,H40,H42 
+           ATOM    H40    H40     0.622  32.943   1.276  HAL2   C4         
+           ATOM    H42    H42     0.640  32.665   2.886  HAL2   C4         
+           ATOM    C7     C7      0.782  30.905   1.752  CTL2   C4,C10,H44,H46     
+           ATOM    H44    H44     1.177  30.592   2.616  HAL2   C7         
+           ATOM    H46    H46    -0.037  30.369   1.546  HAL2   C7         
+           ATOM    C10    C10     1.795  30.549   0.677  CTL2   C7,C13,H48,H50     
+           ATOM    H48    H48     1.317  30.276  -0.158  HAL2   C10        
+           ATOM    H50    H50     2.374  31.342   0.486  HAL2   C10        
+           ATOM    C13    C13     2.684  29.358   1.190  CTL2   C10,C16,H52,H54      
+           ATOM    H52    H52     3.616  29.481   0.850  HAL2   C13        
+           ATOM    H54    H54     2.690  29.367   2.190  HAL2   C13        
+           ATOM    C16    C16     2.164  28.022   0.717  CTL2   C13,C19,H56,H58      
+           ATOM    H56    H56     1.433  27.721   1.329  HAL2   C16        
+           ATOM    H58    H58     1.803  28.122  -0.210  HAL2   C16        
+           ATOM    C19    C19     3.280  26.961   0.709  CTL2   C16,C22,H60,H62      
+           ATOM    H60    H60     3.342  26.581  -0.214  HAL2   C19        
+           ATOM    H62    H62     4.141  27.413   0.942  HAL2   C19        
+           ATOM    C22    C22     3.069  25.811   1.683  CTL2   C19,C25,H64,H66      
+           ATOM    H64    H64     3.115  26.166   2.617  HAL2   C22        
+           ATOM    H66    H66     2.166  25.413   1.521  HAL2   C22        
+           ATOM    C25    C25     4.130  24.716   1.517  CTL2   C22,C28,H68,H70      
+           ATOM    H68    H68     3.725  23.828   1.734  HAL2   C25        
+           ATOM    H70    H70     4.456  24.712   0.572  HAL2   C25        
+           ATOM    C28    C28     5.296  24.975   2.447  CTL2   C25,C31,H72,H74      
+           ATOM    H72    H72     5.108  24.463   3.285  HAL2   C28        
+           ATOM    H74    H74     6.105  24.595   1.998  HAL2   C28        
+           ATOM    C31    C31     5.620  26.199   2.824  CTL2   C28,C33,H76,H78      
+           ATOM    H76    H76     5.788  26.694   1.971  HAL2   C31        
+           ATOM    H78    H78     4.796  26.559   3.262  HAL2   C31        
+           ATOM    C33    C33     6.695  26.586   3.691  CEL1   C31,C35,H80      
+           ATOM    H80    H80     7.244  25.851   4.089  HEL1   C33        
+           ATOM    C35    C35     7.030  27.833   4.015  CEL1   C33,C37,H82      
+           ATOM    H82    H82     7.831  27.854   4.614  HEL1   C35        
+           ATOM    C37    C37     6.532  29.197   3.724  CEL1   C35,C39,H84      
+           ATOM    H84    H84     5.687  29.385   3.223  HEL1   C37        
+           ATOM    C39    C39     7.457  30.292   4.277  CEL1   C37,C42,H86      
+           ATOM    H86    H86     8.366  30.112   4.653  HEL1   C39        
+           ATOM    C42    C42     6.834  31.693   4.189  CTL3   C39,H88,H90,H92   
+           ATOM    H88    H88     7.473  32.366   4.560  HAL3   C42        
+           ATOM    H90    H90     5.985  31.714   4.716  HAL3   C42        
+           ATOM    H92    H92     6.638  31.912   3.233  HAL3   C42        
+           CHARGE    H34 	 0.43000 # 
+           CHARGE    O1  	-0.66000 #            O1--H34
+           CHARGE    C2  	 0.05000 #	      ¦
+           CHARGE    H36 	 0.09000 #	H36---C2---H38       
+           CHARGE    H38 	 0.09000 # 	      ¦ 
+           CHARGE    C4  	-0.18000 #	H40---C4---H42 
+           CHARGE    H40 	 0.09000 #	      ¦       
+           CHARGE    H42 	 0.09000 # 	      ¦       
+           CHARGE    C7  	-0.18000 #	H44---C7---H46
+           CHARGE    H44 	 0.09000 #	      ¦       
+           CHARGE    H46 	 0.09000 # 	      ¦       
+           CHARGE    C10 	-0.18000 #	H48---C10---H50
+           CHARGE    H48 	 0.09000 #	      ¦       
+           CHARGE    H50 	 0.09000 # 	      ¦       
+           CHARGE    C13 	-0.18000 #	H52---C13---H54
+           CHARGE    H52 	 0.09000 #	      ¦       
+           CHARGE    H54 	 0.09000 # 	      ¦       
+           CHARGE    C16 	-0.18000 #	H56---C16---H58
+           CHARGE    H56 	 0.09000 #	      ¦       
+           CHARGE    H58 	 0.09000 # 	      ¦       
+           CHARGE    C19 	-0.18000 #	H60---C19---H62
+           CHARGE    H60 	 0.09000 #	      ¦       
+           CHARGE    H62 	 0.09000 # 	      ¦       
+           CHARGE    C22 	-0.18000 #	H64---C22---H66
+           CHARGE    H64 	 0.09000 #	      ¦       
+           CHARGE    H66 	 0.09000 # 	      ¦       
+           CHARGE    C25 	-0.18000 #	H68---C25---H70
+           CHARGE    H68 	 0.09000 #	      ¦       
+           CHARGE    H70 	 0.09000 # 	      ¦       
+           CHARGE    C28 	-0.18000 #	H72---C28---H74
+           CHARGE    H72 	 0.09000 #	      ¦       
+           CHARGE    H74 	 0.09000 # 	      ¦       
+           CHARGE    C31 	-0.18000 #	H76---C31---H78
+           CHARGE    H76 	 0.09000 #	      ¦ 
+           CHARGE    H78 	 0.09000 # 	      ¦ 
+           CHARGE    C33 	-0.15000 #	      C33---H80
+           CHARGE    H80 	 0.15000 #	cis   ¦¦ 
+           CHARGE    C35 	-0.15000 # 	      C35---H82	       
+           CHARGE    H82 	 0.15000 #	      ¦ 
+           CHARGE    C37 	-0.15000 #	      C37---H84
+           CHARGE    H84 	 0.15000 #	trans ¦¦ 
+           CHARGE    C39 	-0.15000 #	H86---C39
+           CHARGE    H86 	 0.15000 #	      ¦ 					       
+           CHARGE    C42 	-0.27000 #	H88---C42---H90
+           CHARGE    H88 	 0.09000 #	      ¦ 				      
+           CHARGE    H90 	 0.09000 #	      H92		      
+           CHARGE    H92 	 0.09000 #
+ENDMOLECULE 
+
+
+

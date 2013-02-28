@@ -1,0 +1,16 @@
+INFO     Forcefield:  AMBER 99 + Simmerling modification, Aminoacids only
+INFO     from Simmerling, Strockbine, Roitberg, JACS 124:11258, 2002.  Modifies parm99.
+
+INCLUDE amber99aa.ff
+
+TORSION     C   N   CT  C   0.400         262.422        1.       
+TORSION     C   N   CT  C   0.410         303.104        2.       
+TORSION     C   N   CT  C   0.020         287.633        3.       
+TORSION     C   N   CT  C   0.020         332.898        4.       
+
+TORSION     N   CT  C   N      0.480      273.882           1.  
+TORSION     N   CT  C   N      0.450      308.833           2.  
+TORSION     N   CT  C   N      0.120      330.033           3.  
+TORSION     N   CT  C   N      0.450      316.282           4.  
+
+

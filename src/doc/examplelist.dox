@@ -1,0 +1,54 @@
+/*!
+@page examplelist List of Example Scripts
+@section mainpage_examples Example Scripts
+
+The example scripts can be found in examples/
+
+  - \ref md_explicit_solvent_run
+  - \ref md_gbsa_langevin_run
+  - \ref md_langevin_vaccum_run
+  - \ref md_simple_vaccum_run
+  - \ref restraint_run
+  - \ref scoring_energy_gbsa_run
+  - \ref scoring_energy_vaccum_run
+  - \ref trajectory_output_run
+
+
+
+
+
+
+\page  md_explicit_solvent_run Example: example/md/explicit_solvent/run.py
+\include "md/explicit_solvent/run.py"
+
+\page  md_gbsa_langevin_run Example: example/md/gbsa_langevin/run.py
+\include "md/gbsa_langevin/run.py"
+
+\page  md_langevin_vaccum_run Example: example/md/langevin_vaccum/run.py
+\include "md/langevin_vaccum/run.py"
+
+\page  md_simple_vaccum_run Example: example/md/simple_vaccum/run.py
+
+  This example script demonstrates the usage of simple MolecularDynamics and demonstrates 
+  most of the options it provides. It demonstrates how to set the integrators and set temperature control 
+  as well as related paramters. This script concentrates on MolecularDynamics  in vaccum and
+  implicit solvent. A different MD example covers MolecularDynamics under periodic boundary conditions.
+  \section test test test
+
+\include "md/simple_vaccum/run.py"
+
+\page  restraint_run Example: example/restraint/run.py
+\include "restraint/run.py"
+
+\page  scoring_energy_gbsa_run Example: example/scoring/energy_gbsa/run.py
+\include "scoring/energy_gbsa/run.py"
+
+\page  scoring_energy_vaccum_run Example: example/scoring/energy_vaccum/run.py
+\include "scoring/energy_vaccum/run.py"
+
+\page  trajectory_output_run Example: example/trajectory_output/run.py
+# MD to relax the unequilibrarted starting structure
+\include "trajectory_output/run.py"
+
+*/
+

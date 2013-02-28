@@ -1,0 +1,200 @@
+/*!
+
+\page codingguidelines Coding Guidelines
+
+With larger numbers of people devoloping this software there's increasing need
+to define some guide lines for developers such that there is code safety,
+reliability, readability and style consistency.
+Some rules are general OOP rules and 
+others are more PD3 specific.
+
+\section generalrules General Rules 
+
+The software is being used for simulation by various people as well as constantly
+being developed. Thus to prevent unnoticed errors sneaking in, here are some rules to hold on to.
+
+  - <b>Renaming</b>:  Because MMLIB exposes it's internal class interface directly to the user one should **never** rename any public <i>ClassNames</i> or their public variables and functions. Instead, if you feel a name change would be appropriate for any reason, put it in RENAME.log where it will be evauated and implemented in on go with other renamings at a major release version. Private members & internal (i.e. non-SWIG-exported) variables can be renamed & changed any time.
+  - <b>Feature Updating</b>: When modernising or replacing an existing feature one must maintain the old one until the replacement is ready. If the interface has changed and depending on the situation one should provide wrapper functions which display a "depricated - us this new equivalent feature" type message. Also mark them in the code with the word ''DEPRECATED''. Those can then be removed at major version changes.
+
+ \section goldenrules Golden Rules 
+
+ <b>ALL</b> New code must follow these rules. Old code should be gradually adapted to follow these rules.
+ In conclusion after many periods of debating foolishness:
+
+  -  <a ref="http://www.parashift.com/c++-faq-lite/"> C++ FAQ Lite </a> is good, listen to its words!
+  -  Forcefield filenames should lose the FF (they are in a forcefield folder) 
+  -  Forcefield class names should get a FF_ prefix
+  -  All class name abbreviations should be followed with a _ if anything succeeds them
+  -  If your class doesn't use dynamic memory (new and delete) dont define <a href="http://www.parashift.com/c++-faq-lite/coding-standards.html#faq-27.10">The Big Three</a> (or even worse any one of them singly)
+
+ \section swiginterface SWIG/Python Interface 
+
+  - To keep the interface small and safe try and 'hide' unnessessary member variables and function in the ''protected'' and ''private'' parts of classes. In cases where you want to hide something from SWIG but not from within mmlib use friends or (if all else fails) ''#ifdef SWIG/#endif''. SWIG will generate two surprisingly large wrapper functions for <i>every public variable</i> of every class which leads to a lot of code bloat. A well designed class should have a relatively narrow interface anyway.
+
+\section svncodeversioning SVN Code versioning 
+
+  - <b>Check in stuff in small, logically coherent chunks</b>. Frequent checkins are generally recommended.
+  - <b>DO NOT change the contents of a file and rename it/move it in one checkin</b>. Instead checkin the changes first. then just move/rename the changed file.
+  - <b>DO NOT  check in global find/replaces together with other changes </b> (if possible, i know it's not always). As above, do them consequtively.
+
+\section publicnamingconventions Public Naming conventions 
+
+ Because the internal interface of BOA gets exposed into the outside world is is important to stick to a consistent Naming scheme for public variables and public functions. although the same is true for private names (those which do not get wrapped into python) it is somewhat less important what things are named.
+
+\subsection classnames Class Names 
+ Use CamelCase with a capital first letter - avoid underscores unless to seperate Abbreviations
+ AbstractBase Classes and Classes that are not instantiatable (i.e. cannot/shouldnt be used by themselves) should end in ''Base'' (e.g. ProtocolBase)
+
+Examples:
+
+\code
+Forcefield
+ForcefieldBase
+GeneralizedBorn
+GB_Still
+SurfaceAreaFF
+SASA_LCPO 
+\endcode
+
+=== Public Class Member Variables ===
+We use CamelCase with a capital first letter <i>except</i> if the variable name is a symbol or contains a symbol:
+
+Examples:
+\code
+Timestep
+GridSize
+InnerCutoff
+k
+e0
+Data_e0
+\endcode
+
+=== Public Class member Functions ===
+Use camelCase where the first word should be lowercase <i>and a verb</i>! Try and stick to a standard set of verbs
+(see list below) to signify standard classes of behaviour.
+
+Examples:
+	\code
+	init()
+	initDataList()
+	calcRadiusInfluence()
+	removeAllDataMembers()
+combineForces()
+	\endcode
+
+	Standard verbs for function naming
+	\code
+{a,b,c} in my opinion superflous synonyms, the first one being my favourite 
+{a|b|c} in my opinion superflous synonyms, no order of preference
+[name]  deprecated 
+[name->subs] already removed and renamed to 'subs'
+
+Initialisation:      {setup, init, reinit}
+Creation events:     {create, generate, make}
+Property access:     is, get, set
+Searching:           {find, lookup}
+Adding Elements:      add, append, lend
+Note: 'add'  means add a copy (in accordance with STL), 
+	'lend' means add a reference (ownership remains with caller!)
+
+	Removing elements:    
+clear (removes all elements), 
+			reset (resets the state of data to zero/default)
+{remove|erase} (remove single elements), [delete]
+
+Obtaining Data:      {get, request, obtain}
+IO:                   read,write,append,open,close
+\endcode
+
+
+\section codingstyle Coding Style 
+
+In terms of coding style we (try) and adopt generally used coding style e.g. see [[http://geosoft.no/development/cppstyle.html| C++ Style Guide]]
+although there are a large number of places in the code where these are not being followed. 
+The following rules however do apply:
+* Avoid C-style arrays unless absolutely nessessary. I.e. never. Use ''std::vector''.  It is not slower but much more convenient. (WWW links here)
+* Do not use ''using namespace MyNamespace'' in header files.
+* <b>Class Design</b>
+* Constructuors should take only parameters for which there is no or cannot be a default value. Everything else is done through public member variables or functions (e.g. set_myparameter() ) which should have sensible default values. This keeps this user interface as simple as possible.
+* Doxygen comments should be used wherever possible \code(i.e. ///<)\endcode
+	* Headers 
+* should never contain code bodies (even for constructors or destructors) unless they are templates (in which case they have to be)
+	* should contain the absolute minimum of other headers to reduce compile-time overhead - use [[coding:cpp:forward_declaratons|forward declarations]] instead.
+	* For consistency and by convention most major objects should provide the following two functions: - examples can be found throuhg the code.
+	\code
+	void help() const;       // Usage instructions to the object in question
+	void info() const;       // Short summary of the properies/contents of this class
+	void detail() const;     // Details of the contents of the class. 
+	\endcode
+	* ''namespace BlahBlah { ... }''' should not indent the code. The extra tabs at the beginning are merely a waste of space.
+
+
+\section privatecodingcosmetic  Private Coding Cosmetics 
+Although with code that is not visible from outside the library is not so essentail to keep to naming conventions
+we still recommend we try and keep to a number of conventions to make life easier for other coders.
+
+* Tabbination:
+\code
+	myfunc( 
+			const vector &a, ///< comment! 
+			const vector &d, 
+			const vector &c, 
+			const vector &d 
+			)  
+{
+	// Functionbody here
+}
+\endcode
+
+\subsection tabbination Code Tabbination
+
+ 1) Only indent code using tabs
+
+\verbatim
+ <tab>void MyFunc()
+ <tab>{
+ <tab><tab>return;
+ <tab>}
+
+ <tab>void MyFunc(
+ <tab><tab>int param1, ///< Comment
+ <tab><tab>int param2  ///< Comment
+ <tab>)
+ <tab>{
+ <tab><tab>return;
+ <tab>}
+\endverbatim
+
+ 2) For aligning after text, such as comments, only use spaces
+\verbatim
+ int param1;<spaces____only>///< Comment
+ int param2;<spaces____only>///< Comment
+ int param3;<spaces____only>///< Comment
+ int bigParam4;<spaces_only>///< Comment
+\endverbatim
+
+* Loop Variable Conventions:
+* 'i','j','k',...         for looping over atoms
+* 'iat','jat','kat',...   for looping over atoms
+* 'ir','jr',..            for looping over residues
+* 'imol',...              for looping over molecules
+
+\section errorhandling Error Handling 
+
+ERROR conventions:
+throw() for messages to the user
+check() assert-style messages to user
+	ASSERT and THROW for messages destined for developer
+D_ASSERT for for debugmode only checks (inner loops, speed considerations only)
+
+	Recipient|  Release           Debug
+	------------------------------------------------
+	user     | throw/check         -
+	coder    | THROW/ASSERT       D_ASSERT
+
+
+	*/
+
+
+  
+

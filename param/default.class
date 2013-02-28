@@ -1,0 +1,67 @@
+# Now define classes of residue and their respective named members
+
+# CLASS statement format:
+# CLASS class_name residue_name
+
+# class_name can be anything, but there are some standard internal definitions
+# 1) polypeptide
+# nucleotide:
+#  2) DNA
+#  3) RNA
+# 4) carbohydrate
+# 5) smallmolecule
+# 6) solvent
+# 7) ion
+
+# Mid chain polypeptide residues
+CLASS_PREFIX polypeptide N C
+CLASS polypeptide ALA # Alanine
+CLASS polypeptide CYS # Cysteine
+CLASS polypeptide CYX # Cysteine (disulphide bond)
+CLASS polypeptide ASP # Aspartic Acid
+CLASS polypeptide GLU # Glutamic Acid
+CLASS polypeptide PHE # Phenyl Alanine
+CLASS polypeptide GLY # Glycine
+CLASS polypeptide HIS # Histidine
+CLASS polypeptide HIP # Histidine with HE2 & HD1 & Positive charge
+CLASS polypeptide HID # Histidine with HD1
+CLASS polypeptide HIE # Histidine with HE2
+CLASS polypeptide ILE # IsoLeucine
+CLASS polypeptide LYS # Lysine
+CLASS polypeptide LEU # Leucine
+CLASS polypeptide MET # Methionine
+CLASS polypeptide ASN # Asparagine
+CLASS polypeptide PRO # Proline
+CLASS polypeptide GLN # Glutamine
+CLASS polypeptide ARG # Arginine
+CLASS polypeptide SER # Serine
+CLASS polypeptide THR # Threonine
+CLASS polypeptide VAL # Valine
+CLASS polypeptide TRP # Tryptophan
+CLASS polypeptide TYR # Tyrosine
+
+# Special polypeptide 'capping' residues must be defined as 'polypeptide' for 
+# MMLib's ImportFile/PDB classes to parse them correctly, otherwise they will
+# be treated as HET moleules
+CLASS_CAP polypeptide ACE
+CLASS_CAP polypeptide NME
+
+# nucleotide
+# Those names with a D are for DNA residues and those with an R are for RNA residues. 
+# A terminal 5' residue would be indicated by e.g. DA5 and a 3' residue would be e.g. DT3.
+CLASS_POSTFIX dna 5 3
+CLASS dna DA
+CLASS dna DC
+CLASS dna DG
+CLASS dna DT
+
+CLASS_POSTFIX rna 5 3
+CLASS rna RA
+CLASS rna RC
+CLASS rna RG
+CLASS rna RU
+
+CLASS water H20
+CLASS water SOL
+CLASS water HOH
+

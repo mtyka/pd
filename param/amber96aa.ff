@@ -1,0 +1,11 @@
+INFO     Forcefield:  AMBER 96, Aminoacids only
+
+INCLUDE amber94aa.ff
+
+TORSION     C   N   CT  C       0.30   180.00     2.00 
+TORSION     C   N   CT  C       0.85     0.00     1.00 
+
+TORSION     N   CT  C   N       0.00   180.00     4.00 
+TORSION     N   CT  C   N       0.30   180.00     2.00 
+TORSION     N   CT  C   N       0.85     0.00     1.00 
+

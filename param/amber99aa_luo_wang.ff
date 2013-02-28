@@ -1,0 +1,21 @@
+INFO     Forcefield:  AMBER 96, Aminoacids only
+INFO     From Ray Luo and Junmei Wang.  Modifies amber99aa
+
+INCLUDE amber99aa.ff
+
+
+TORSION    C    N    CT   C       0.850       180.000      2.000   
+TORSION    C    N    CT   C       0.050       180.000      1.000   
+TORSION    C    N    CT   C       0.300         0.000      3.000   
+TORSION    N    CT   C    N       0.750       180.000      1.000   
+TORSION    N    CT   C    N       1.300       180.000      2.000   
+TORSION    N    CT   C    N       0.750       180.000      3.000   
+TORSION    CT   CT   N    C       0.000         0.000      1.000   
+TORSION    CT   CT   N    C       0.000         0.000      2.000   
+TORSION    CT   CT   N    C       0.000         0.000      3.000   
+TORSION    CT   CT   N    C       0.000         0.000      4.000   
+TORSION    CT   CT   C    N       0.250         0.000      1.000   
+TORSION    CT   CT   C    N       0.000         0.000      2.000   
+TORSION    CT   CT   C    N       0.000         0.000      3.000   
+TORSION    CT   CT   C    N       0.000         0.000      4.000   
+

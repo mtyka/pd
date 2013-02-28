@@ -1,0 +1,24 @@
+EXAMPLES 
+
+Here is a large collection of example scripts to demonstrate most features of PD.
+These scripts act in three ways:
+a) example usages and demonstration 
+b) templates for new simulations
+c) unit tests of functionality
+
+Layout:
+There should be one script per directory and it *MUST* be called run.py. The scripts
+can assume that they are run with the current directory set to the same directory
+where the respective run.py file is located.
+The reason for this is twofold: The automatic unittesting and the doxygen documentation
+scripts both assume that the scripts are called run.py and use that assumption to find
+the scripts and/or execute them. In this way one does not need to register a new example
+anywhere after adding it - it will be found automatically.
+
+Note: 
+These examples assume you have set your PD_PARAM_PATH to the PD library directory.
+In bash you can easily do this by saying for example
+export PD_PARAM_PATH="/home/myusername/mypddir/lib"
+
+See INSTALL for more details on how to do this
+

@@ -1,0 +1,91 @@
+/*!
+
+@mainpage PD3 Code Documentation 
+<center>
+PD is a free, modular C++ library for biomolecular simulation with a 
+flexible and scriptable Python interface. 
+
+Copyright (C) 2003-2013 Mike Tyka and Jon Rea
+
+Contact: mike.tyka@gmail.com
+
+</center>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+@section mainpage_maindoc User Documentation
+
+  - \ref install
+	- \ref license
+	- \ref introduction
+
+@subsection mainpage_tutorials Tutorials 
+
+ - \ref tutorial_1 
+ 
+@subsection mainpage_examples Example Scripts
+
+A \ref examplelist scripts found in  examples/  
+can be found 
+
+
+@section mainpage_development   Development
+
+  - \ref codingguidelines 
+	- \ref newforcefield
+	- \ref newprotocol
+	- \ref newmonitor
+
+
+@subsection mainpage_namespaces Important Namespaces
+
+	- WorkSpace
+	- Protocol 
+	- Physics 
+	- Monitors
+
+@subsection mainpage_classes Important Classes
+
+	- FFParamSet 
+	- WorkSpace
+	- System
+
+@subsection mainpage_classes Important Base Classes
+
+	- ProtocolBase
+	  - RangedProtocolBase
+	- ForcefieldBase
+	  - RestraintForcefieldBase
+	- MonitorBase
+	- PickBase
+
+
+
+@section mainpage_otherpages Other Pages
+
+It's also possible to have additional pages where other topics can be
+discussed. For instance:
+
+To create a new additional page, just make a .dox file with a "@page ..."
+command in it, somewhere under the doc/ directory.
+These pages will show up under the "Related Pages" tab automatically,
+but you may add a "@ref" to them here also.
+
+@section mainpage_abbreviations Abbreviations
+
+Common Abbreviations:
+
+ - FF  --> Forcefield
+
+*/
+
+
+

@@ -1,0 +1,93 @@
+############################################################################################
+## This make file should work for most modules. Just set the MODULENAME variable
+## to the name of your module. This should be the same name as that used for you .i
+## SWIG interface file and the same name as used by the module directive 
+## inside the .i file
+############################################################################################
+
+## set this to the name of the module
+MODULENAME = example 
+
+## Set this to the directory of the PD distribution
+PD_DIR =../../../
+
+############################################################################################
+## Only change below this line if you know what you're doing 
+############################################################################################
+
+CC           = gcc 
+CPP          = g++ 
+LDFLAGS     =  -L$(PD_DIR)/src/mmlib
+ASM         = nasm
+ASMFLAGS    = -f elf
+SWIG        = swig
+PYTHON      = python 
+ARCH        =  
+CCFLAGS = -fPIC -O3 -funroll-loops -fomit-frame-pointer -ffast-math -felide-constructors -c -I. -I$(PD_DIR)/src/  -I$(PD_DIR)/src/mmlib 
+CFLAGS = -fPIC -O3 -funroll-loops -fomit-frame-pointer -ffast-math -c -I. -I$(PD_DIR)/src/  -I$(PD_DIR)/src/mmlib 
+
+# Make sure these locate the Python installation
+PYTHON_INCLUDE= -I/usr/local/include/python2.5 -I/usr/local/include/python2.4 -I/usr/include/python2.3 -I/usr/local/lib/python2.4/config
+
+############################################################################################
+## Should not need to change anything below this line
+############################################################################################
+
+## strip whitespace from MODULENAME; no whitespace after this experession !!
+MODULE+=${shell echo $(MODULENAME) | sed 's/ //g'}
+
+## construct auxillary filenames
+MODULE_SO=_$(MODULE).so 
+MODULE_I=$(MODULE).i 
+MODULE_WRAP_O=$(MODULE)_wrap.o 
+MODULE_WRAP_CXX=$(MODULE)_wrap.cxx 
+
+SRCS = $(shell find -name "*.cpp")
+SRCS += $(shell find -name "*.c")
+OBJS_TEMP = $(patsubst %.cpp,%.o,$(SRCS))
+OBJS = $(patsubst %.c,%.o,$(OBJS_TEMP))
+OBJS += $(MODULE_WRAP_O)
+
+     
+                                                                                           
+.SUFFIXES: .cpp .cxx .asm .o .i .h
+
+.c.o : $< 
+	gcc $(CFLAGS) $< -o  $@
+
+.cpp.o : $< 
+	$(CPP) $(CCFLAGS) $< -o  $@
+
+.cxx.o : $< 
+	$(CPP) $(CXXFLAGS) $(PYTHON_INCLUDE) $< -o  $@
+
+
+.PHONY : default clean
+
+# Perform a complete build
+default: $(MODULE_SO)
+	 
+# Clean all except the compilation result
+clean: 
+	rm -rf `find -name "*.o"` `find -name "*.a"` `find -name "*.cxx"` $(MODULE_SO) $(MODULE).py `find -name "*.d"`
+
+#####################
+# Compilation Rules:
+#####################
+
+$(MODULE_WRAP_CXX) : $(MODULE_I) $(PD_I_DEPS)
+	$(SWIG) -I$(PD_DIR)/src/mmlib -I$(PD_DIR)/src/ -c++ -python $(MODULE_I)
+	$(PYTHON) $(PD_DIR)/src/tools/modifypd.py $(MODULE).py
+
+$(MODULE_WRAP_O): $(MODULE_WRAP_CXX) 
+	$(CPP) $(CCFLAGS) $(PYTHON_INCLUDE) $< -o  $@
+
+$(MODULE_SO): $(OBJS) 
+	$(CPP) -shared $(LDFLAGS) $(OBJS) -o $(MODULE_SO) -lmmlib 
+	strip $(MODULE_SO)
+	cp $(MODULE).py _$(MODULE).so $(PD_DIR)/bin
+
+tags:
+	ctags  `find -name "*.h"` `find -name "*.cc"`
+
+gcc: default

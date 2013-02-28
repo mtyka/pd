@@ -1,0 +1,9 @@
+#!/bin/bash
+# Ensure that the scratch.cpp file is present in either the readonly default of customised forms...
+if [ -e scratch/scratch.cpp ] 
+then
+	echo scratch.cpp persent, compiling...
+else
+	echo scratch.cpp not persent, copying template then compiling...
+	cp scratch/scratch.examples.cpp scratch/scratch.cpp
+fi

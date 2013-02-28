@@ -1,0 +1,38 @@
+#############
+## TIP3 Water 
+#############
+
+IDENT TIP3
+
+# Common aliases for water in PDB files.
+
+CLASS water TIP3
+
+ALIAS H2O TIP3
+ALIAS HOH TIP3
+ALIAS H20 TIP3
+ALIAS H0H TIP3
+ALIAS SOL TIP3
+ALIAS TIP TIP3
+
+## Solvents
+TYPE    OW         8    16.00    1.7682    0.1521   0.0000	      TIP3 Oxygen
+TYPE    HW         1     1.01    0.0000  0.0000   0.0000	      TIP3 Hydrogens
+
+BOND    OW  HW      0.9572   553.0     1.0    TIP3P water
+BOND    HW  HW      1.5136   553.0     1.0    TIP3P water
+
+ANGLE   HW  OW  HW       104.52   100.      TIP3P water
+ANGLE   HW  HW  OW       127.74     0.      (found in crystallographic water with 3 bonds)
+
+
+MOLECULE _ HOH TIP3        
+	ATOM O 	 O 	 0.705023   0.743831    0.160230	OW     	H1,H2
+	ATOM H1  H1  	-0.070767   0.263875    0.450087	HW     	O
+	ATOM H2  H2  	 1.356316   0.064396   -0.014154	HW     	O
+	CHARGE  O  -0.834	
+	CHARGE  H1  0.417	
+	CHARGE  H2  0.417	
+ENDMOLECULE
+
+

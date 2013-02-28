@@ -1,0 +1,17 @@
+To update the Makefile.am s in all directories under mmlib
+one has to run the gen_make_am.sh
+then 
+back to root
+and run
+./sh toolchain.sh
+on a machine that has autoconf/automake installed
+then run ./configure
+then make
+
+
+
+
+Visual Studio
+-------------
+
+see-> doc\installation\install.htm

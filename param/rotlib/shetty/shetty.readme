@@ -1,0 +1,20 @@
+http://mordred.bioc.cam.ac.uk/~rapper/scl.php
+
+SCLs are detailed libraries of side chain conformations taken from high-resolution X-ray crystal structures solved at better than 1.8 Å resolution. The libraries includes both individual conformations for all twenty standard amino acids and their associated propensity of occurrance. There are several libraries, derived from the same data set, but clustered using a different RMSD threshold, ranging from the very fine 0.2 Å to the course 1.5 Å.
+
+Sidechain Conformer Library derived for the study published by Shetty et al.
+
+You will need to download a pair of files e.g.:
+scl-B30-occ1.0-rmsd1.0-prop20.0.dat
+scl-B30-occ1.0-rmsd1.0-prop20.0.pdb
+
+Example code use:
+
+Library::RotamerLibrary rot(ffps);
+
+// First use
+rot.convertLib("lib/rotlib/shetty/scl-B30-occ1.0-rmsd1.0-prop20.0",Library::RotLibConvert_Shetty());
+rot.writeLib("lib/rotlib/shetty.rotamer");
+
+// Thereafter
+rot.readLib("lib/rotlib/shetty.rotamer");

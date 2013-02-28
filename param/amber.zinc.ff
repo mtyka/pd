@@ -1,0 +1,59 @@
+# Forcefield for the simulation of a zinc finger :-D
+
+# http://www.rosswalker.co.uk/tutorials/amber_workshop/Tutorial_four_orig/
+# Bond, angle and torsion values derived from a REAL zinc-finger structure
+# **ALL** force constants taken dodgily from the above URL - but should be OK ?!?
+
+# Assign a class
+CLASS ion Zn
+
+#   Groups      .---<atom>----.  .-----vdw-------.  .--elec--. .--- other ---->
+#   Type          (Z)  AtMass     Radius  Epsilon    Charge     Solv.    hBond   Additional
+# Backbone
+
+TYPE    Zn         30     65.39    1.10    0.0125   2.000  Zn2+ (amber says radius 1.1, opls says 1.85!!, other online source says 1.39)
+
+# Bond types:
+# Atom  A   B    length(A)  force constant(kcal/mol/A^2)  Reference
+
+BOND   NB   Zn   1.99000  70.000  1.0    # kludge by Jon    
+BOND   Zn   SH   2.30000  70.000  1.0    # kludge by Jon    
+
+#Angle types:
+# Atom    A   B   C    angle(deg)  force constant(kcal/mol/A^2)  Reference
+
+ANGLE     Zn  NB  CV    126.000  50.000    # kludge by Jon  
+ANGLE     Zn  NB  CR    126.000  50.000    # kludge by Jon  
+ANGLE     Zn  NB  CC    128.000  50.000    # kludge by Jon  
+
+ANGLE     Zn  SH  CT    108.000  50.000    # kludge by Jon  
+
+ANGLE     NB  Zn  NB     97.000  10.000    # kludge by Jon  
+ANGLE     NB  Zn  SH    110.000  10.000    # kludge by Jon  
+ANGLE     SH  Zn  SH    113.000  10.000    # kludge by Jon  
+
+# Torsion types:
+# Atom      A   B   C   D      Vm(kcal/mol) gamma(deg) n  Reference                     old, erronous figures
+#
+
+TORSION     X  NB  Zn  X        0.000       180.000     1.
+TORSION     X  Zn  SH  X        0.000       180.000     1.  
+
+## HACKED!!
+SECTION  SOLVATION_GENERALISED_BORN
+	#               Type        Radius       
+	SOLVATIONTYPE   Zn 	    1.10  
+ENDSECTION
+
+## HACKED!!
+SECTION  LCPOSASAPARAMETERS
+#                        Name Neighbors  Radius        P1          P2           P3         P4
+        LCPOSASATYPE    Zn   4          1.10          0.0000e+00  0.0000e+00  0.0000e+00 0.0000e+00 
+        LCPOSASATYPE    SH   2    	1.9000    	  5.4581e-01 -1.9477e-01 -1.2873e-03 2.9247e-04
+        LCPOSASATYPE    NB   3    	1.6500    	  6.2577e-02 -1.7874e-02 -8.3120e-05 1.9849e-05
+ENDSECTION
+
+MOLECULE  Z ZN ZN
+        ATOM ZN   ZN     0.000   0.000   0.000 Zn         
+        CHARGE    ZN     2.0
+ENDMOLECULE

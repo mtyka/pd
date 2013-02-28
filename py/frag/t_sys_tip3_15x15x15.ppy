@@ -1,0 +1,24 @@
+
+
+
+sim = System(ffps)
+mol =  NewMolecule(ffps,"TIP3")
+boundary = PeriodicRectangular(15.00)
+sim.solvate(mol, boundary , 1.0)    # solvate box by density (1.0g/ml)
+#sim.solvate_N(mol, boundary, 113)  # solvate by exact number
+sim.info()
+
+nlist = NeighbourList_GeneralBoundary()
+
+psystem = WorkSpace( sim )
+psystem.printPDB("waterbox.pdb")
+psystem.setSpace(boundary)
+psystem.setNeighbourList(nlist)
+
+tra = Traj_Out("outtra.tra",psystem)
+psystem.addTra(tra)
+ff = createff(psystem)
+epot_summary(ff)
+
+
+

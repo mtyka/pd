@@ -1,0 +1,35 @@
+Author
+Jon Rea
+
+Abstract
+An Angleset is currently limited to be a protein backbone torsion library i.e. Phi / Psi /Omega.
+
+Name glossary:
+All : Parametised Angleset definitions to be used for all protein structure types
+Loop: Parametised Angleset definitions for protein loops only
+Raft: The original Angleset definition used in the RAFT application and paper
+
+Defaults
+It is recommended that the end user use default.xxx.angleset where ‘xxx’ is the desired structure set. 
+These should be suitable for most purposed.
+
+Viewer
+The viewer is a little program to look at the contents of an anglset library. It is written using C# 
+and the .Net framework, and uses functionality provided by the UoBFramwork.
+
+All and Loop Folders
+These folders contain anglesets for every sensible permutation of the fitted torsion parameters. 
+The file naming format is:
+a_b_c.xxx.angleset
+Where:
+a = The number of angles for each residue type
+b = The number of angles for Proline
+c = The number of angles for Glycine
+xxx = The parametised structure type, being either loop or all.
+
+Method
+The angles were chosen by a per-residue monte carlo search on an idealised PDB database. The scoring 
+function was a RMSD minimisation of the distance of each angle from the database to its nearest fitted 
+angle. The original raft work was based upon a 2 degree grid search over the Ramachandran space. The 
+more recent work was performed in late 2004, and uses a much larger data set that the original RAFT work 
+performed in ~1995.

@@ -1,0 +1,291 @@
+
+/*!
+
+\page tutorial_1  Tutorial 1
+
+
+<h1>Tutorial 1 - Wetting your appetite: Langevin simulation in implicit solvent</h1>
+
+
+In this tutorial we will use PD to setup a simple simulation of a small
+protein called Trp-Cage using the AMBER ff03 forcefield and
+Generalized-Born implicit solvent. We will minimise the PDB structure and
+perform a short stochastic dynamics (langevin) simulation. We will develop
+the input script step by step introducing various basic PD features
+in the process. We will not assume that the reader knows anything about
+the Python language. <br>
+The following example is designed to demonstrate various features
+
+<h2><a name="t1_a"></a>1.1 Creating an inputscript</h2>
+
+<p>
+In the following sections we will create a file <tt> langevin.py </tt>
+which will act as our input script. This file is a simple text file and can be edited
+and created with any text editor of your choice.
+
+
+<h3><a name="t1_a"></a>1.1.1 Loading PD</h3>
+
+<p>
+The first line of the script will import the PD suite into the python
+environment making all of it's functionality available to the script.
+<p>
+\code
+from pd import *
+\endcode
+
+<p>
+This line will be found at the beginning of every input script.
+</p>
+
+<h3><a name="t1_a"></a>1.1.2 Some preliminaries</h3>
+
+<p>
+Before we set up our system, we will a) set the random number seed
+of the internal PD random number generator to the current system time
+and b) start a generic timer which will later use to obtain the total runtime.
+
+\code
+cseed(4)   # set random number seed to current system time
+timer()    # start a timer
+\endcode
+
+<p>
+These are two example of simple function calls to PD functions and always
+have the syntax <tt> functionname(parameter1,parameter2,..,parameterN) </tt><br>
+In the above cases there were no parameters required.
+Comments can be inserted using the hash character. The python interpreter will ignore anything proceeding a hash.
+</p>
+
+<h3><a name="t1_a"></a>1.1.3 Loading the force field definitions</h3>
+
+<p>
+Before we begin a simulation we must load a force field parameter set
+from a forcefield file. Here we will use <tt>amber03aa.ff</tt> which defines
+the AMBER ff03 forcefield (Duan et al. 2003). It contains information
+about protein residues, their atoms, relative positions as well as
+physical parameters such as mass, charge etc.. nessessary for simulation.
+
+\code
+ffps = FFParamSet("amber03aa.ff")
+\endcode
+
+<p>
+The above is an example of an object creation: We create an object <tt>ffps</tt> using the PD type <tt>FFParamSet</tt> which takes a filename at creation
+time. After this instruction we will be able to refer to the data set loaded
+from <tt>amber03aa.ff</tt> using the (arbitrary, user-chosen) name <tt>ffps</tt>
+
+<h3><a name="t1_a"></a>1.1.4 Creating a system</h3>
+
+<p>
+Its time to create a simulation system and put some molecules into it.
+</p>
+
+\code
+## Create a simulation system using the
+## parameter set ffps
+sim = PDB_In(ffps, "../../pdb/trpcage.pdb");
+sim.loadAll();
+sim.info()
+\endcode
+
+<p>
+We start by creating another object of type <tt>System</tt>. This acts as a container
+for molecules and takes a forcefield parameter set as a parameter at creation time.
+We then create a molecule and add it to our simulation box.
+<tt>NewProteinPDB</tt> is another standalone
+PD function which creates a protein molecule from a PDB file and returns a
+new object of type <tt>Molecule</tt> which we call <tt>mol</tt>.
+we then add <tt>mol</tt> into the simulation system using the <tt>add</tt> function.
+The <tt>add</tt> function is an example of a so called <tt>member function</tt> which unlike the standolne functions we saw earlier is part of a certain type of object. In this example any
+object of type <tt>System</tt> (such as <tt>sim</tt> ) has a built-in function called <tt>add</tt>
+which accepts molecules as parameters and adds them to the object in question. We will see more examples
+of member functions shortly.<br>
+Finally we instruct <tt>sim</tt> to print some information about it self. This will display what molecules
+are loaded into it.
+
+<h3><a name="t1_a"></a>1.1.5 Creating a workspace</h3>
+
+<p> Before we run a simulation we must create a <tt>Workspace</tt> from our system. <tt>Workspace</tt> and <tt>System</tt>
+are very similar and share many functionalities but have different purposes and a differetn internal
+representation.<br>
+<tt>System</tt> stores it's atoms in a hierarchical fashion allowing easy manipulation
+of the contents. Thus it's primary purpose is the arrangement and setup of a simulation. <br>
+<tt>Workspace</tt> stores it's atoms in a linear fashion ideally suited for fast simulation.
+Thus it's purpose is to act as a 'scratch space' to do simulations.
+We create a <tt>Workspace</tt> by a simple call and subsequently display some information about it.
+
+\code
+## Create a simulation workspace
+wspace = WorkSpace( sim )
+wspace.info()
+\endcode
+
+<p> Note that in this example our <tt>Workspace</tt>  encompasses the entire <tt>System</tt>.
+While this is the case in many situations it is not obligatory. There are mechanisms to transfer
+subsets of atoms into a workspace, such as a spherical shell of atoms around a binding site for excample.
+
+<h3><a name="t1_a"></a>1.1.5 Adding a trajectory</h3>
+
+<p> We want to record atom positions along the trajectory for later analysis. Thus we create a
+Trajectory object <tt>Traj_Out</tt> ands add it to our workspace. The format of this particular
+trajectory is our inhouse format .tra and the output file will be called <tt>output.tra</tt>
+
+\code
+## Create an output trajectory (tra format)
+tra = OutTra_BTF("output",wspace)
+wspace.addTra(tra)
+
+\endcode
+
+<h3><a name="t1_a"></a>1.1.6 Creating a forcefield</h3>
+
+<p>Now we will set up a forcefield and add our chosen components into it.
+
+\code
+## create a GB/SA Forcefield using the AMBER
+## 03 Parameter set
+
+ff = Forcefield(wspace)
+bonds = FF_Bonded(wspace)
+gb    = FF_GeneralizedBorn_Still( wspace)
+gb.Cutoff = 12.0
+gb.InnerCutoff =  9.0
+gb.FastMode = 1
+sasa  = FF_SASA_LCPO( wspace )
+sasa.GlobalASP = 0.005
+
+## add all the forcefield components to our forcefield
+ff.add( bonds )
+ff.add( gb )
+ff.add( sasa )
+\endcode
+
+<p> The first line creates an empty object <tt>ff</tt> of type <tt>Forcefield</tt>
+which will act as a container for forcefield components. We then create a <tt>BondedForcefield</tt>
+which implements simple bond, angle and torsion terms found in most modern forcefields.<br>
+Further we create a <tt>GB_Still</tt> force field component  which implements a particular version
+of the widely used Generalized-Born electrostatic model (namely that due to Still et al. 1994).
+It also calculates Van der Waals forces. Various properties such as cutoffs and other parameters
+are set.<br>
+Finally we add a SurfaceArea based force field component <tt>SASA_LCPO</tt> to complete the GB/SA model.
+In gbsa all atom types share one common surface tension parameter which is set by setting the propery
+<tt>GlobalASP</tt>. The algorithm used to calculate the surface area is the LCPO algorithm a approximate
+but fast analytical algorithm.
+
+<p>Finally we add each component to the <tt>Forcefield</tt> to complete the forcefield setup.
+Although not the simplest of examples, the above code showcases how easy and flexible it is to
+create and mix&match components to create new forcefields.
+
+
+\code
+ff.printEnergySummary()  ## calculate energies and show them summarised
+ff.info()         ## show parameters
+\endcode
+
+
+<h3><a name="t1_a"></a>1.1.7 Running a simple minimisation</h3>
+
+<p> We are now ready to run our first simulation! Because we loaded an NMR structure from a PDB
+file, there may be slight steric clashes so we will run a short minimisation to relax the structure.
+
+\code
+## Run some Minimisation
+min = Minimisation(ff)
+min.Steps = 50
+min.UpdateScr  =  10
+min.UpdateNList = 10
+
+min.run()
+\endcode
+<p>
+As before we create an object <tt>min</tt> of type  <tt>Minimisation</tt> that represents the
+minimisation algorithm. We then set the number of  <tt>Steps</tt>, how often we wish the
+screen to be updated with information and how often the neighbour list is to be recalculated.
+
+<p> The final line launches the simulation.
+
+
+<h3><a name="t1_a"></a>1.1.8 Running a simple molecular dynamics simulation</h3>
+
+<p> Having run the minimisation we could now try a slightly more complex simulation,
+a short molecular dynamics run. As before we create an object md of type <tt>MolecularDynamics</tt>
+and set a variety of properties to set up our simulation.
+
+\code
+## Run some Molecular Dynamics
+md = MolecularDynamics(ff)
+md.Steps = 2000
+md.UpdateScr = 100
+md.UpdateTra = 10
+md.UpdateNList = 10
+md.Integrator = MolecularDynamics.Langevin
+md.setTargetTemp(300)
+\endcode
+
+<p> We let the <tt>Integrator</tt> be a langevin simulation (a stochastic simulation), we set the
+temperature regime to 300 kelvin. We also set <tt>UpdateTra</tt> to 10, which means that every
+10th step we will save a snap shot of the structure into our trajectory that we defined earlier.
+
+<h3><a name="t1_a"></a>1.1.9 Monitoring a property during the simulation</h3>
+
+<p> before we actually launch the simulation we will demonstrate another feature of PD, namely the
+modular ability to add <tt>Monitors</tt> who's function is to measure properties throughout
+a trajectory and save this data for later analysis. This is achieved by creating an object of
+type <tt>AtomDistanceMonitor</tt> which takes a target workspace and two atom indices as parameters.
+The monitor is added to the simulation using the function <tt>addMonitor</tt> as demonstrated below.
+\code
+# Add a atom-atom distance monitor to the simulation
+# (we will monitor atoms with indices 102 and 263)
+dist = AtomDistanceMonitor(wspace, 102, 263)
+md.addMonitor(dist)
+
+md.run()
+\endcode
+
+<p> After we've added our monitor we launch the simulation by <tt>md.run()</tt>. The algorithm
+will now perform 2000 steps of langevin dynamics and the monitor will measure the distance
+between atom <tt>102</tt> and <tt>263</tt> after every steps of dynamics.
+
+<h3><a name="t1_a"></a>1.1 Running a simple molecular dynamics simulation</h3>
+<p> Now that we've run our trajectory, we would like to see the data gathered. To do this
+we use the built-in functions in monitors to write, print and analyse the gathered data.
+In this example we will use the function <tt>getHistogram(..)</tt> to turn our raw data
+into a histogram with bin width 0.05. The histogram histogram counts are then printed to the screen.
+Finally we print the time taken for the program to run (remember we set a timer right a the
+beginning).
+\code
+## put the collected data into a histogram with bin width 0.05
+dist.getHistogram(0.05).print_count()
+
+## print time taken
+timer()
+\endcode
+
+
+<h2><a name="t1_a"></a>1.2 Running the simulation</h2>
+
+<p> Before you can run the simulation you need the PD python interface file <tt>pd.py</tt>
+and the PD library (<tt>_pd.dll</tt> or <tt>_pd.so</tt> in Windows/Unix respecitvely) in the current directory.
+You will find these files in the sub directory <tt>/bin</tt> in your distribution directory.
+
+<p> The python script containing this tutorials work is <a href="../../examples/tutorials/tut1/langevin.py">../../examples/tutorials/tut1/langevin.py</a>
+<p> To launch the simulation you type
+\code
+cd examples/tutorials/tut1/
+python run.py 
+\endcode
+
+
+<h2><a name="t1_a"></a>1.3 Conclusion</h2>
+
+We have intentionally chosen a relatively advanced example with the intention to show case the
+way PD enables the user to combine it's algorthms in a highly modular fashion using an
+intuitive input script. However we have merely touched the surface of the number of possible
+properties that can we set or manipulated to create highly customised simulations. In the subsequent
+tutorials we will explore other algorithms, techniques and properties devlving deeper and more
+fundamentally into the way PD can be used.
+
+
+
+*/ 

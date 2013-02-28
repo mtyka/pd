@@ -1,0 +1,21 @@
+
+
+
+sim = System(ffps)
+mol =  NewProteinPDB(ffps,"pdb/trpcage.pdb")  
+sim.add(mol)
+sim.info()
+sim.detail()
+
+psystem = WorkSpace( sim )
+psystem.info()
+psystem.detail()
+
+tra = Traj_Out("outtra.tra",psystem)
+psystem.addTra(tra)
+ff = createff(psystem)
+epot_summary(ff)
+
+
+
+

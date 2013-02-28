@@ -1,0 +1,23 @@
+
+ffps = FFParamSet()
+ffps.readlib("../lib/amber03aa.ff")
+
+def createff(psystem):
+  ff = Forcefield(psystem)
+
+  bonds = BondedForcefield()
+  nb    = NonBondedForcefield()
+
+  nb.cutoff = 16.0
+  nb.innercutoff =  8.0
+  nb.vdwcutoff =  5.0
+  nb.vdwinnercutoff =  4.0
+
+  ff.add( bonds )
+  ff.add( nb )
+  return ff
+
+
+
+
+

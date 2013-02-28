@@ -1,0 +1,165 @@
+###############
+# PD3 Makefile
+###############
+
+# This file should be run by:
+# 1) Old way; type 'make'
+# 2) To build faster use a 'parallel build' by typing 'gmake -j 4' (runs 4 parallel compilation jobs)
+
+###########
+# Defines:
+###########
+
+
+
+
+#
+# -akK 
+#
+#
+#
+#
+#
+## INTEL
+CC          = /opt/intel/cc/9.0/bin/icpc 
+CCFLAGS     = -DINTEL -O3 -ip -axKWN -c -I. -I./mmlib 
+CXXFLAGS    = $(CCFLAGS)
+EXTRALIBS   =  -limf  -lsvml 
+
+LDFLAGS     = 
+ASM         = nasm
+ASMFLAGS    = -f elf
+SWIG        = swig
+PYTHON      = python 
+
+# C++ Compilation flag-sets:
+# See: 'man g++'
+
+# Old Flagset        : CCFLAGS = -shared -O2 -finline-functions -ffast-math -funroll-loops -c -I. -I./mmlib
+# Uber-Optimise      : CCFLAGS = -fPIC -O3 -funroll-loops -ffast-math -c -I. -I./mmlib
+# Uber-Uber-Optimise : CCFLAGS = -fPIC -O3 -funroll-loops -fomit-frame-pointer -ffast-math -felide-constructors -fexpensive-optimizations -c -I. -I./mmlib
+# Misc               : CCFLAGS = -fPIC -O3 -march=pentiumpro -ffast-math -funroll-loops -c -I. -I./mmlib
+# No Optimisations   : CCFLAGS = -O0 -c -I. -I./mmlib
+# Default            : CCFLAGS = -fPIC -O3 -fomit-frame-pointer -ffast-math  -c -I. -I./mmlib
+ 
+#CCFLAGS = -fPIC -O3 -funroll-loops -fomit-frame-pointer -ffast-math -felide-constructors -c -I. -I./mmlib -MMD -MT $(*F).d -MP
+
+# Copy the params for PD cxx file
+CXXFLAGS = $(CCFLAGS)
+
+# Make sure these locate the Python installation
+PYTHON_INCLUDE= -I/usr/local/include/python2.5 -I/usr/local/include/python2.4 -I/usr/include/python2.3 -I/usr/local/lib/python2.4/config
+      
+########################
+# File Extension Rules:
+########################
+                                                                                           
+.SUFFIXES: .cpp .cxx .asm .o .i .h
+
+
+.asm.o :
+	$(ASM) $< $(ASMFLAGS) -o $@
+
+.cpp.o : $< 
+	$(CC) $(CCFLAGS) $< -o  $@
+
+.cxx.o : $< 
+	$(CC) $(CXXFLAGS) $(PYTHON_INCLUDE) $< -o  $@
+
+# -fweb
+# -fno-gcse
+#-O1 -fforce-mem  -foptimize-sibling-calls -fstrength-reduce -fcse-follow-jumps  \
+#-fgcse-las -fdelete-null-pointer-checks -fexpensive-optimizations -fregmove\
+#-fschedule-insns  -fschedule-insns2 -fsched-interblock  -fsched-spec -fcaller-saves -fpeephole2 -freorder-blocks\
+#-freorder-functions -fstrict-aliasing -funit-at-a-time -falign-functions  -falign-jumps -falign-loops  -falign-labels\
+#-fcrossjumping -fcse-skip-blocks -frerun-cse-after-loop  -frerun-loop-opt
+#
+#
+#
+#
+
+###########################
+# Source File Definitions:
+###########################
+	
+
+## Find all the sources for mmlib
+MMLIB_SRCS := $(shell find mmlib -name "*.cpp" | grep -v _purgatory | grep -v _egress | grep -v segdistfan | grep -v segrejoin | grep -v segbonded )
+## and all the headers
+##MMLIB_HDRS := $(shell find mmlib -name "*.h" | grep -v _purgatory | grep -v _egress)
+
+## Work out the object files and dependency files
+MMLIB_OBJS := $(patsubst %.cpp,%.o,$(MMLIB_SRCS))
+MMLIB_DEPS := $(patsubst %.cpp,%.d,$(MMLIB_SRCS))
+
+PD_I_DEPS := $(shell cat pd/pd.i | grep '%include' | grep -v '.i"' | sed 's/%include "//' | sed 's/"//')
+
+
+#################
+# Make Commands:
+#################
+
+.PHONY : default clean
+
+# Perform a complete build
+default: mmlib/global.h.gch mmlib/libmmlib.a pd/_pd.so
+
+# Build without the precompiled header
+default_noprecomp: mmlib/libmmlib.a pd/_pd.so
+
+scratch: mmlib/global.h.gch mmlib/libmmlib.a scratch_rule
+
+
+-include $(MMLIB_DEPS)
+-include pd/pd_wrap.d pd/accessory.d
+
+
+
+# Some exceptions on the optimisation parameters:
+
+## This is a weired behaviour of gcc - with the usual -O3 combo it actually makes it much worse  oddly-ffast-math 
+#mmlib/forcefields/nonbonded.o: mmlib/forcefields/nonbonded.cpp
+#	$(CC) -fPIC -O2 -funroll-loops  -fno-gcse -finline-functions -frename-registers -fomit-frame-pointer -felide-constructors -c -I. -I./mmlib -MMD -MT $(*F).d -MP $<  -o  $@
+	 
+# Clean all except the compilation result
+clean: 
+	rm -rf `find -name "*.o"` `find -name "*.a"` `find -name "*.cxx"` mmlib/global.h.gch pd/_pd.so pd/_pd.py `find -name "*.d"`
+
+#####################
+# Compilation Rules:
+#####################
+
+
+
+#pd/pd.i: $(PD_I_DEPS)
+
+pd/pd_wrap.cxx : pd/pd.i $(PD_I_DEPS)
+	$(SWIG) -I./mmlib -c++ -python pd/pd.i
+	$(PYTHON) ./tools/modifypd.py pd/pd.py
+
+mmlib/global.h.gch : mmlib/global.h
+	$(CC) $(CCFLAGS) -c mmlib/global.h -o mmlib/global.h.gch
+
+mmlib/libmmlib.a: $(MMLIB_OBJS) 
+	ar rcs mmlib/libmmlib.a $(MMLIB_OBJS)
+	ranlib mmlib/libmmlib.a 
+
+pd/pd_wrap.o: pd/pd_wrap.cxx 
+	$(CC) $(CXXFLAGS) $(PYTHON_INCLUDE) $< -o  $@
+
+pd/_pd.so: mmlib/libmmlib.a pd/pd_wrap.o pd/accessory.o
+	$(CC) -shared $(LDFLAGS) -L./mmlib pd/accessory.o pd/pd_wrap.o -o pd/_pd.so -lm -lmmlib  $(EXTRALIBS)
+	strip pd/_pd.so
+	cp pd/pd.py pd/_pd.so ../bin
+
+scratch_rule: scratch/scratch.cpp $(MMLIB_OBJS) 
+	dos2unix scratch/scratch.sh
+	sh scratch/scratch.sh
+	$(CC) $(CCFLAGS) scratch/scratch.jon.cpp -o scratch/scratch.o
+	$(CC) $(CCFLAGS) pd/accessory.cpp -o pd/accessory.o
+	$(CC) $(LDFLAGS) scratch/scratch.o pd/accessory.o -L./mmlib -L./pd -o scratch.exe -lm -lmmlib
+
+tags:
+	ctags  `find -name "*.h"` `find -name "*.cc"`
+
+gcc: default

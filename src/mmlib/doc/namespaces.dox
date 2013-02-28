@@ -1,0 +1,53 @@
+/*!
+
+ \namespace Core 
+ \brief     Contains core classes such as System and WorkSpace and helper classes which handle molecules and atoms, their 
+            connectivity, coordinates, properties. These classes sit at the center of PD's simulation engine.
+
+ \namespace Maths
+ \brief     Mathematical functions & classes: Vectors and vector operations, Simple 3x3 Matrices, Statistic Tools, Polynomial Equations, etc..
+
+ \namespace Manipulator
+ \brief     Classes which manipulate coordinates in a WorkSpace; primarily Moves for MonteCarlo simulation.
+
+ \namespace Protocol
+ \brief     All simulation protocol classes; Minimisation, MolecularDynamics, MonteCarlo, ReplicaExchange Dynamics, etc.. 
+
+ \namespace Monitors
+ \brief     Classes deriving from MonitorBase and supporting functions. 
+            All machinery related to measuring and monitoring quantities of a WorkSpace during a simulation.
+
+ \namespace Physics 
+ \brief     Forcefields and forcefield components as well as other tools relating to calculating theoretical 
+            thermodynamic, physical or chemical properties.
+	
+ \namespace Sequence
+ \brief     Sequence manipulation tools, Alignement tools
+
+ \namespace Library
+ \brief     Library and database tools providing and managing chemical or physical information
+
+ \namespace Tra 
+ \brief     Trajectory import and export base classes and functionality.  
+
+ \namespace LokiCore
+ \brief     Typesafe Standard Output formatting tools
+
+ \namespace IO  
+ \brief     All File Input/Output machinery.
+
+
+ \namespace JAMA
+ \brief     Part of the TNT Linear Algebra Package
+
+ \namespace TNT 
+ \brief     The TNT Linear Algebra Package
+
+ \namespace PDB 
+ \brief     Classes and functions handling PDB input and output
+
+
+
+*/
+
+

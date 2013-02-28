@@ -1,0 +1,9 @@
+
+min = Minimisation(ff)
+min.steps = 250
+min.update_scr  =  20
+min.update_tra  = 0
+min.run()
+
+
+

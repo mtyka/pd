@@ -1,0 +1,19 @@
+
+min = Minimisation(ff)
+min.steps = 250
+min.update_scr  =  25
+min.update_tra  = 0
+min.run()
+
+md = MolecularDynamics(ff)
+md.steps = 2000
+md.timestep   = 1.00E-15
+md.update_scr = 100
+md.update_tra = 100
+md.update_nlist = 10
+md.integrator = MolecularDynamics.Langevin
+md.targettemp = Temp(300)
+
+md.run()
+
+

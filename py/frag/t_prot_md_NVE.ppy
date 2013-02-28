@@ -1,0 +1,23 @@
+
+## Minimise for a few steps first
+min = Minimisation(ff)
+min.steps = 250
+min.update_scr  =  25
+min.update_tra  = 0
+min.run()
+
+
+## Now run some constant energy MD using the Velocity Verlet integrator
+
+md = MolecularDynamics(ff)
+md.steps = 2000
+md.timestep   = 1.00E-15
+md.update_scr = 100          ## Update screen and
+md.update_tra = 100          ## Trajectory every 100 steps
+md.update_nlist = 10         ## Calculate new neighbor list every 10 steps
+md.integrator = MolecularDynamics.VelocityVerlet
+md.integrator = MolecularDynamics.ConstantEnergy
+
+md.run()
+
+

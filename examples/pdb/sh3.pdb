@@ -1,0 +1,1091 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0086)http://www.rcsb.org/pdb/cgi/export.cgi/5HCK.pdb?format=PDB&pdbId=5HCK&compression=None -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY><PRE>HEADER    TRANSFERASE                             09-MAR-98   5HCK              
+TITLE     HUMAN HCK SH3 DOMAIN, NMR, MINIMIZED AVERAGE STRUCTURE                
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: HEMATOPOIETIC CELL KINASE;                                 
+COMPND   3 CHAIN: NULL;                                                         
+COMPND   4 FRAGMENT: SH3 DOMAIN;                                                
+COMPND   5 SYNONYM: HCK;                                                        
+COMPND   6 EC: 2.1.7.112;                                                       
+COMPND   7 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
+SOURCE   4 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE   5 EXPRESSION_SYSTEM_STRAIN: BL21 (DE3) PLYSS;                          
+SOURCE   6 EXPRESSION_SYSTEM_PLASMID: PET-14B;                                  
+SOURCE   7 EXPRESSION_SYSTEM_GENE: RESIDUES G72-E143 OF HUMAN HCK               
+KEYWDS    SH3, PROTEIN TYROSINE KINASE, SIGNAL TRANSDUCTION,                    
+KEYWDS   2 TRANSFERASE                                                          
+EXPDTA    NMR, MINIMIZED AVERAGE STRUCTURE                                      
+AUTHOR    D.A.HORITA,D.M.BALDISSERI,W.ZHANG,A.S.ALTIERI,                        
+AUTHOR   2 T.E.SMITHGALL,W.H.GMEINER,R.A.BYRD                                   
+REVDAT   1   17-JUN-98 5HCK    0                                                
+JRNL        AUTH   D.A.HORITA,D.M.BALDISSERI,W.ZHANG,A.S.ALTIERI,               
+JRNL        AUTH 2 T.E.SMITHGALL,W.H.GMEINER,R.A.BYRD                           
+JRNL        TITL   SOLUTION STRUCTURE OF THE HUMAN HCK SH3 DOMAIN AND           
+JRNL        TITL 2 IDENTIFICATION OF ITS LIGAND BINDING SITE                    
+JRNL        REF    J.MOL.BIOL.                   V. 278   253 1998              
+JRNL        REFN   ASTM JMOBAK  UK ISSN 0022-2836                 0070          
+REMARK   1                                                                      
+REMARK   2                                                                      
+REMARK   2 RESOLUTION. NOT APPLICABLE.                                          
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM     : X-PLOR 3.851                                         
+REMARK   3   AUTHORS     : BRUNGER                                              
+REMARK   3                                                                      
+REMARK   3  OTHER REFINEMENT REMARKS: PRESENTED ENSEMBLE WAS                    
+REMARK   3  CALCULATED USING NOE/DIHEDRAL AND 1H AND 13C CHEMICAL               
+REMARK   3  SHIFT RESTRAINTS.                                                   
+REMARK   4                                                                      
+REMARK   4 5HCK COMPLIES WITH FORMAT V. 2.2, 16-DEC-1996                        
+REMARK   6                                                                      
+REMARK   6 THE FOLLOWING RESIDUES WERE PRESENT IN THE PROTEIN USED IN           
+REMARK   6 THE NMR EXPERIMENTS BUT NOT IN THE STRUCTURE CALCULATION             
+REMARK   6 AND ARE NOT INCLUDED IN THIS PDB ENTRY: GLY 72, ILE 73,              
+REMARK   6 ARG 74, GLU 75, ALA 76, GLY 77, LEU 139, GLU 140, THR 141,           
+REMARK   6 GLU 142, GLU 143.                                                    
+REMARK 210                                                                      
+REMARK 210 EXPERIMENTAL DETAILS                                                 
+REMARK 210  EXPERIMENT TYPE                : NMR                                
+REMARK 210  TEMPERATURE           (KELVIN) : 298                                
+REMARK 210  PH                             : 6.25                               
+REMARK 210                                                                      
+REMARK 210  NMR EXPERIMENTS CONDUCTED      : SEE JRNL ARTICLE                   
+REMARK 210  SPECTROMETER FIELD STRENGTH    : 500 MHZ, 600 MHZ                   
+REMARK 210  SPECTROMETER MODEL             : UNITY PLUS                         
+REMARK 210  SPECTROMETER MANUFACTURER      : VARIAN                             
+REMARK 210                                                                      
+REMARK 210  STRUCTURE DETERMINATION.                                            
+REMARK 210   SOFTWARE USED                 : X-PLOR                             
+REMARK 210   METHOD USED                   : DG, SA                             
+REMARK 210                                                                      
+REMARK 210 CONFORMERS, NUMBER CALCULATED   : 50                                 
+REMARK 210 CONFORMERS, NUMBER SUBMITTED    : 1                                  
+REMARK 210 CONFORMERS, SELECTION CRITERIA  : MINIMIZED AVERAGE                  
+REMARK 210   STRUCTURE                                                          
+REMARK 210                                                                      
+REMARK 210 REMARK:                                                              
+REMARK 210 IONIC_STRENGTH: NULL                                                 
+REMARK 210 PRESSURE: 1 ATM                                                      
+REMARK 210 SOLVENT SYSTEM: 20 MM HAPHOSPHATE, 50 MM NACL                        
+REMARK 210                                                                      
+REMARK 210 THE STRUCTURE WAS DETERMINED USING TRIPLE-RESONANCE NMR              
+REMARK 210 SPECTROSCOPY ON 13C, 15N-LABELED HCK-SH3 DOMAIN.                     
+REMARK 215                                                                      
+REMARK 215 NMR STUDY                                                            
+REMARK 215 THE COORDINATES IN THIS ENTRY WERE GENERATED FROM SOLUTION           
+REMARK 215 NMR DATA.  PROTEIN DATA BANK CONVENTIONS REQUIRE THAT                
+REMARK 215 CRYST1 AND SCALE RECORDS BE INCLUDED, BUT THE VALUES ON              
+REMARK 215 THESE RECORDS ARE MEANINGLESS.                                       
+REMARK 650                                                                      
+REMARK 650 HELIX                                                                
+REMARK 650 DETERMINATION METHOD: AUTHOR-DETERMINED (MOLMOL/KABSCH &amp;             
+REMARK 650 SANDER)                                                              
+REMARK 700                                                                      
+REMARK 700 SHEET                                                                
+REMARK 700 DETERMINATION METHOD: AUTHOR-DETERMINED (MOLMOL/KABSCH &amp;             
+REMARK 700 SANDER)                                                              
+REMARK 999                                                                      
+REMARK 999 SEQUENCE                                                             
+REMARK 999 5HCK       SWS     P08631       1 -    77 NOT IN ATOMS LIST          
+REMARK 999 5HCK       SWS     P08631     139 -   526 NOT IN ATOMS LIST          
+DBREF  5HCK     78   138  SWS    P08631   HCK_HUMAN       78    138             
+SEQRES   1     72  GLY ILE ARG GLU ALA GLY SER GLU ASP ILE ILE VAL VAL          
+SEQRES   2     72  ALA LEU TYR ASP TYR GLU ALA ILE HIS HIS GLU ASP LEU          
+SEQRES   3     72  SER PHE GLN LYS GLY ASP GLN MET VAL VAL LEU GLU GLU          
+SEQRES   4     72  SER GLY GLU TRP TRP LYS ALA ARG SER LEU ALA THR ARG          
+SEQRES   5     72  LYS GLU GLY TYR ILE PRO SER ASN TYR VAL ALA ARG VAL          
+SEQRES   6     72  ASP SER LEU GLU THR GLU GLU                                  
+HELIX    1   1 SER    130  TYR    132  5                                   3    
+SHEET    1   A 3 ASP   103  GLU   109  0                                        
+SHEET    2   A 3 ILE    82  ALA    85 -1  N  VAL    83   O  MET   105           
+SHEET    3   A 3 VAL   133  VAL   136 -1  N  VAL   136   O  ILE    82           
+SHEET    1   B 2 TRP   114  SER   119  0                                        
+SHEET    2   B 2 LYS   124  PRO   129 -1  N  ILE   128   O  TRP   115           
+CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1          
+ORIGX1      1.000000  0.000000  0.000000        0.00000                         
+ORIGX2      0.000000  1.000000  0.000000        0.00000                         
+ORIGX3      0.000000  0.000000  1.000000        0.00000                         
+SCALE1      1.000000  0.000000  0.000000        0.00000                         
+SCALE2      0.000000  1.000000  0.000000        0.00000                         
+SCALE3      0.000000  0.000000  1.000000        0.00000                         
+ATOM      1  N   SER    78      16.264   3.451   4.949  1.00  4.41      HCKS N  
+ATOM      2  CA  SER    78      17.212   2.696   4.080  1.00  3.68      HCKS C  
+ATOM      3  C   SER    78      16.458   2.040   2.919  1.00  2.68      HCKS C  
+ATOM      4  O   SER    78      15.309   2.346   2.665  1.00  2.63      HCKS O  
+ATOM      5  CB  SER    78      17.825   1.633   4.991  1.00  4.12      HCKS C  
+ATOM      6  OG  SER    78      19.089   2.086   5.456  1.00  4.79      HCKS O  
+ATOM      7 1H   SER    78      15.781   4.179   4.386  1.00  4.60      HCKS H  
+ATOM      8 2H   SER    78      15.560   2.794   5.345  1.00  4.85      HCKS H  
+ATOM      9 3H   SER    78      16.789   3.905   5.723  1.00  4.72      HCKS H  
+ATOM     10  HA  SER    78      17.984   3.351   3.707  1.00  4.08      HCKS H  
+ATOM     11 1HB  SER    78      17.177   1.463   5.834  1.00  4.21      HCKS H  
+ATOM     12 2HB  SER    78      17.942   0.711   4.437  1.00  4.35      HCKS H  
+ATOM     13  HG  SER    78      18.955   2.915   5.921  1.00  5.22      HCKS H  
+ATOM     14  N   GLU    79      17.100   1.140   2.218  1.00  2.43      HCKS N  
+ATOM     15  CA  GLU    79      16.425   0.458   1.070  1.00  1.75      HCKS C  
+ATOM     16  C   GLU    79      15.355  -0.507   1.585  1.00  1.37      HCKS C  
+ATOM     17  O   GLU    79      15.657  -1.485   2.242  1.00  1.67      HCKS O  
+ATOM     18  CB  GLU    79      17.536  -0.309   0.348  1.00  2.51      HCKS C  
+ATOM     19  CG  GLU    79      18.553   0.682  -0.221  1.00  3.21      HCKS C  
+ATOM     20  CD  GLU    79      18.166   1.044  -1.656  1.00  3.62      HCKS C  
+ATOM     21  OE1 GLU    79      17.726   0.159  -2.371  1.00  3.83      HCKS O  
+ATOM     22  OE2 GLU    79      18.316   2.200  -2.015  1.00  4.20      HCKS O  
+ATOM     23  H   GLU    79      18.026   0.913   2.447  1.00  3.08      HCKS H  
+ATOM     24  HA  GLU    79      15.988   1.185   0.404  1.00  1.53      HCKS H  
+ATOM     25 1HB  GLU    79      18.027  -0.971   1.046  1.00  2.76      HCKS H  
+ATOM     26 2HB  GLU    79      17.109  -0.887  -0.458  1.00  3.00      HCKS H  
+ATOM     27 1HG  GLU    79      18.564   1.575   0.387  1.00  3.55      HCKS H  
+ATOM     28 2HG  GLU    79      19.535   0.232  -0.217  1.00  3.71      HCKS H  
+ATOM     29  N   ASP    80      14.107  -0.238   1.290  1.00  0.82      HCKS N  
+ATOM     30  CA  ASP    80      13.012  -1.140   1.761  1.00  0.58      HCKS C  
+ATOM     31  C   ASP    80      11.918  -1.224   0.696  1.00  0.44      HCKS C  
+ATOM     32  O   ASP    80      12.138  -0.889  -0.453  1.00  0.56      HCKS O  
+ATOM     33  CB  ASP    80      12.476  -0.484   3.036  1.00  0.69      HCKS C  
+ATOM     34  CG  ASP    80      13.592  -0.402   4.080  1.00  1.05      HCKS C  
+ATOM     35  OD1 ASP    80      14.096  -1.445   4.462  1.00  1.71      HCKS O  
+ATOM     36  OD2 ASP    80      13.922   0.702   4.479  1.00  1.46      HCKS O  
+ATOM     37  H   ASP    80      13.889   0.559   0.756  1.00  0.76      HCKS H  
+ATOM     38  HA  ASP    80      13.400  -2.121   1.984  1.00  0.74      HCKS H  
+ATOM     39 1HB  ASP    80      12.122   0.511   2.807  1.00  0.76      HCKS H  
+ATOM     40 2HB  ASP    80      11.662  -1.073   3.430  1.00  0.77      HCKS H  
+ATOM     41  N   ILE    81      10.739  -1.658   1.068  1.00  0.44      HCKS N  
+ATOM     42  CA  ILE    81       9.633  -1.750   0.073  1.00  0.49      HCKS C  
+ATOM     43  C   ILE    81       8.439  -0.900   0.517  1.00  0.45      HCKS C  
+ATOM     44  O   ILE    81       7.336  -1.388   0.628  1.00  0.64      HCKS O  
+ATOM     45  CB  ILE    81       9.259  -3.233  -0.012  1.00  0.72      HCKS C  
+ATOM     46  CG1 ILE    81       8.764  -3.750   1.366  1.00  0.57      HCKS C  
+ATOM     47  CG2 ILE    81      10.464  -4.038  -0.529  1.00  1.58      HCKS C  
+ATOM     48  CD1 ILE    81       9.906  -4.308   2.237  1.00  1.64      HCKS C  
+ATOM     49  H   ILE    81      10.582  -1.915   2.000  1.00  0.59      HCKS H  
+ATOM     50  HA  ILE    81       9.975  -1.422  -0.885  1.00  0.49      HCKS H  
+ATOM     51  HB  ILE    81       8.457  -3.336  -0.730  1.00  1.47      HCKS H  
+ATOM     52 1HG1 ILE    81       8.291  -2.940   1.898  1.00  1.38      HCKS H  
+ATOM     53 2HG1 ILE    81       8.030  -4.527   1.192  1.00  0.33      HCKS H  
+ATOM     54 1HG2 ILE    81      11.298  -3.909   0.145  1.00  1.99      HCKS H  
+ATOM     55 2HG2 ILE    81      10.202  -5.084  -0.582  1.00  2.11      HCKS H  
+ATOM     56 3HG2 ILE    81      10.738  -3.684  -1.512  1.00  2.17      HCKS H  
+ATOM     57 1HD1 ILE    81      10.846  -3.880   1.922  1.00  2.22      HCKS H  
+ATOM     58 2HD1 ILE    81       9.725  -4.056   3.272  1.00  2.18      HCKS H  
+ATOM     59 3HD1 ILE    81       9.947  -5.382   2.132  1.00  2.16      HCKS H  
+ATOM     60  N   ILE    82       8.640   0.375   0.762  1.00  0.28      HCKS N  
+ATOM     61  CA  ILE    82       7.489   1.232   1.190  1.00  0.28      HCKS C  
+ATOM     62  C   ILE    82       6.949   2.014   0.002  1.00  0.31      HCKS C  
+ATOM     63  O   ILE    82       7.693   2.556  -0.785  1.00  0.45      HCKS O  
+ATOM     64  CB  ILE    82       8.026   2.186   2.261  1.00  0.25      HCKS C  
+ATOM     65  CG1 ILE    82       8.649   1.384   3.405  1.00  0.30      HCKS C  
+ATOM     66  CG2 ILE    82       6.875   3.039   2.810  1.00  0.24      HCKS C  
+ATOM     67  CD1 ILE    82       9.335   2.338   4.384  1.00  0.65      HCKS C  
+ATOM     68  H   ILE    82       9.536   0.766   0.654  1.00  0.23      HCKS H  
+ATOM     69  HA  ILE    82       6.713   0.617   1.605  1.00  0.30      HCKS H  
+ATOM     70  HB  ILE    82       8.770   2.830   1.825  1.00  0.30      HCKS H  
+ATOM     71 1HG1 ILE    82       7.876   0.833   3.919  1.00  0.77      HCKS H  
+ATOM     72 2HG1 ILE    82       9.379   0.696   3.005  1.00  0.64      HCKS H  
+ATOM     73 1HG2 ILE    82       6.216   3.322   2.001  1.00  1.06      HCKS H  
+ATOM     74 2HG2 ILE    82       6.320   2.470   3.541  1.00  1.06      HCKS H  
+ATOM     75 3HG2 ILE    82       7.274   3.929   3.275  1.00  1.02      HCKS H  
+ATOM     76 1HD1 ILE    82      10.072   2.926   3.858  1.00  1.29      HCKS H  
+ATOM     77 2HD1 ILE    82       8.597   2.994   4.823  1.00  1.20      HCKS H  
+ATOM     78 3HD1 ILE    82       9.818   1.767   5.163  1.00  1.27      HCKS H  
+ATOM     79  N   VAL    83       5.654   2.068  -0.126  1.00  0.26      HCKS N  
+ATOM     80  CA  VAL    83       5.036   2.811  -1.257  1.00  0.27      HCKS C  
+ATOM     81  C   VAL    83       4.163   3.949  -0.719  1.00  0.26      HCKS C  
+ATOM     82  O   VAL    83       3.874   4.016   0.463  1.00  0.27      HCKS O  
+ATOM     83  CB  VAL    83       4.178   1.775  -1.998  1.00  0.31      HCKS C  
+ATOM     84  CG1 VAL    83       5.072   0.660  -2.551  1.00  0.27      HCKS C  
+ATOM     85  CG2 VAL    83       3.140   1.171  -1.040  1.00  0.38      HCKS C  
+ATOM     86  H   VAL    83       5.081   1.616   0.529  1.00  0.31      HCKS H  
+ATOM     87  HA  VAL    83       5.799   3.196  -1.914  1.00  0.28      HCKS H  
+ATOM     88  HB  VAL    83       3.670   2.259  -2.816  1.00  0.37      HCKS H  
+ATOM     89 1HG1 VAL    83       6.027   0.677  -2.048  1.00  1.06      HCKS H  
+ATOM     90 2HG1 VAL    83       4.600  -0.299  -2.392  1.00  1.07      HCKS H  
+ATOM     91 3HG1 VAL    83       5.222   0.814  -3.610  1.00  1.01      HCKS H  
+ATOM     92 1HG2 VAL    83       2.629   1.964  -0.515  1.00  1.02      HCKS H  
+ATOM     93 2HG2 VAL    83       2.424   0.593  -1.604  1.00  1.08      HCKS H  
+ATOM     94 3HG2 VAL    83       3.638   0.530  -0.326  1.00  1.02      HCKS H  
+ATOM     95  N   VAL    84       3.730   4.832  -1.579  1.00  0.26      HCKS N  
+ATOM     96  CA  VAL    84       2.861   5.953  -1.128  1.00  0.26      HCKS C  
+ATOM     97  C   VAL    84       1.586   5.969  -1.977  1.00  0.24      HCKS C  
+ATOM     98  O   VAL    84       1.641   6.047  -3.192  1.00  0.27      HCKS O  
+ATOM     99  CB  VAL    84       3.702   7.238  -1.303  1.00  0.29      HCKS C  
+ATOM    100  CG1 VAL    84       3.809   7.640  -2.780  1.00  0.32      HCKS C  
+ATOM    101  CG2 VAL    84       3.044   8.382  -0.533  1.00  0.30      HCKS C  
+ATOM    102  H   VAL    84       3.968   4.748  -2.526  1.00  0.28      HCKS H  
+ATOM    103  HA  VAL    84       2.606   5.822  -0.088  1.00  0.25      HCKS H  
+ATOM    104  HB  VAL    84       4.694   7.070  -0.908  1.00  0.32      HCKS H  
+ATOM    105 1HG1 VAL    84       3.827   6.754  -3.394  1.00  1.09      HCKS H  
+ATOM    106 2HG1 VAL    84       2.952   8.247  -3.046  1.00  1.04      HCKS H  
+ATOM    107 3HG1 VAL    84       4.714   8.207  -2.935  1.00  1.08      HCKS H  
+ATOM    108 1HG2 VAL    84       1.995   8.431  -0.789  1.00  1.10      HCKS H  
+ATOM    109 2HG2 VAL    84       3.146   8.207   0.526  1.00  1.09      HCKS H  
+ATOM    110 3HG2 VAL    84       3.522   9.315  -0.793  1.00  1.00      HCKS H  
+ATOM    111  N   ALA    85       0.442   5.884  -1.352  1.00  0.21      HCKS N  
+ATOM    112  CA  ALA    85      -0.830   5.898  -2.128  1.00  0.21      HCKS C  
+ATOM    113  C   ALA    85      -0.959   7.233  -2.847  1.00  0.24      HCKS C  
+ATOM    114  O   ALA    85      -1.046   8.274  -2.216  1.00  0.27      HCKS O  
+ATOM    115  CB  ALA    85      -1.940   5.743  -1.096  1.00  0.19      HCKS C  
+ATOM    116  H   ALA    85       0.423   5.813  -0.373  1.00  0.22      HCKS H  
+ATOM    117  HA  ALA    85      -0.855   5.083  -2.833  1.00  0.22      HCKS H  
+ATOM    118 1HB  ALA    85      -1.778   6.443  -0.296  1.00  1.07      HCKS H  
+ATOM    119 2HB  ALA    85      -2.889   5.944  -1.563  1.00  0.98      HCKS H  
+ATOM    120 3HB  ALA    85      -1.935   4.737  -0.705  1.00  1.01      HCKS H  
+ATOM    121  N   LEU    86      -0.962   7.206  -4.159  1.00  0.28      HCKS N  
+ATOM    122  CA  LEU    86      -1.064   8.470  -4.946  1.00  0.31      HCKS C  
+ATOM    123  C   LEU    86      -2.519   8.773  -5.320  1.00  0.31      HCKS C  
+ATOM    124  O   LEU    86      -2.786   9.706  -6.052  1.00  0.38      HCKS O  
+ATOM    125  CB  LEU    86      -0.248   8.211  -6.212  1.00  0.37      HCKS C  
+ATOM    126  CG  LEU    86       1.242   8.195  -5.868  1.00  0.42      HCKS C  
+ATOM    127  CD1 LEU    86       2.048   7.790  -7.104  1.00  0.45      HCKS C  
+ATOM    128  CD2 LEU    86       1.675   9.591  -5.415  1.00  0.57      HCKS C  
+ATOM    129  H   LEU    86      -0.883   6.349  -4.626  1.00  0.31      HCKS H  
+ATOM    130  HA  LEU    86      -0.631   9.292  -4.400  1.00  0.31      HCKS H  
+ATOM    131 1HB  LEU    86      -0.532   7.258  -6.636  1.00  0.39      HCKS H  
+ATOM    132 2HB  LEU    86      -0.441   8.994  -6.931  1.00  0.44      HCKS H  
+ATOM    133  HG  LEU    86       1.420   7.485  -5.073  1.00  0.46      HCKS H  
+ATOM    134 1HD1 LEU    86       1.678   8.324  -7.966  1.00  1.09      HCKS H  
+ATOM    135 2HD1 LEU    86       3.089   8.032  -6.950  1.00  1.07      HCKS H  
+ATOM    136 3HD1 LEU    86       1.946   6.727  -7.268  1.00  1.16      HCKS H  
+ATOM    137 1HD2 LEU    86       1.034  10.332  -5.869  1.00  1.06      HCKS H  
+ATOM    138 2HD2 LEU    86       1.600   9.660  -4.340  1.00  1.22      HCKS H  
+ATOM    139 3HD2 LEU    86       2.698   9.766  -5.716  1.00  1.28      HCKS H  
+ATOM    140  N   TYR    87      -3.463   8.004  -4.825  1.00  0.28      HCKS N  
+ATOM    141  CA  TYR    87      -4.904   8.268  -5.144  1.00  0.30      HCKS C  
+ATOM    142  C   TYR    87      -5.770   7.736  -4.000  1.00  0.25      HCKS C  
+ATOM    143  O   TYR    87      -5.399   6.800  -3.316  1.00  0.23      HCKS O  
+ATOM    144  CB  TYR    87      -5.220   7.513  -6.444  1.00  0.37      HCKS C  
+ATOM    145  CG  TYR    87      -4.245   7.898  -7.530  1.00  0.48      HCKS C  
+ATOM    146  CD1 TYR    87      -4.424   9.086  -8.248  1.00  0.58      HCKS C  
+ATOM    147  CD2 TYR    87      -3.154   7.067  -7.808  1.00  0.51      HCKS C  
+ATOM    148  CE1 TYR    87      -3.510   9.442  -9.247  1.00  0.69      HCKS C  
+ATOM    149  CE2 TYR    87      -2.241   7.421  -8.807  1.00  0.62      HCKS C  
+ATOM    150  CZ  TYR    87      -2.419   8.609  -9.528  1.00  0.70      HCKS C  
+ATOM    151  OH  TYR    87      -1.518   8.960 -10.513  1.00  0.82      HCKS O  
+ATOM    152  H   TYR    87      -3.231   7.261  -4.233  1.00  0.27      HCKS H  
+ATOM    153  HA  TYR    87      -5.070   9.333  -5.271  1.00  0.33      HCKS H  
+ATOM    154 1HB  TYR    87      -5.148   6.452  -6.264  1.00  0.36      HCKS H  
+ATOM    155 2HB  TYR    87      -6.224   7.756  -6.762  1.00  0.40      HCKS H  
+ATOM    156  HD1 TYR    87      -5.266   9.726  -8.032  1.00  0.59      HCKS H  
+ATOM    157  HD2 TYR    87      -3.017   6.153  -7.252  1.00  0.49      HCKS H  
+ATOM    158  HE1 TYR    87      -3.647  10.357  -9.802  1.00  0.78      HCKS H  
+ATOM    159  HE2 TYR    87      -1.403   6.778  -9.022  1.00  0.67      HCKS H  
+ATOM    160  HH  TYR    87      -1.301   9.888 -10.398  1.00  1.02      HCKS H  
+ATOM    161  N   ASP    88      -6.907   8.337  -3.779  1.00  0.27      HCKS N  
+ATOM    162  CA  ASP    88      -7.793   7.881  -2.666  1.00  0.26      HCKS C  
+ATOM    163  C   ASP    88      -8.432   6.529  -3.011  1.00  0.25      HCKS C  
+ATOM    164  O   ASP    88      -8.808   6.284  -4.141  1.00  0.26      HCKS O  
+ATOM    165  CB  ASP    88      -8.864   8.964  -2.527  1.00  0.30      HCKS C  
+ATOM    166  CG  ASP    88      -8.276  10.171  -1.791  1.00  0.33      HCKS C  
+ATOM    167  OD1 ASP    88      -7.554   9.960  -0.832  1.00  1.12      HCKS O  
+ATOM    168  OD2 ASP    88      -8.558  11.285  -2.201  1.00  1.14      HCKS O  
+ATOM    169  H   ASP    88      -7.171   9.095  -4.338  1.00  0.32      HCKS H  
+ATOM    170  HA  ASP    88      -7.227   7.811  -1.753  1.00  0.25      HCKS H  
+ATOM    171 1HB  ASP    88      -9.196   9.267  -3.507  1.00  0.34      HCKS H  
+ATOM    172 2HB  ASP    88      -9.701   8.576  -1.967  1.00  0.33      HCKS H  
+ATOM    173  N   TYR    89      -8.555   5.653  -2.043  1.00  0.26      HCKS N  
+ATOM    174  CA  TYR    89      -9.171   4.312  -2.307  1.00  0.27      HCKS C  
+ATOM    175  C   TYR    89      -9.764   3.741  -1.012  1.00  0.32      HCKS C  
+ATOM    176  O   TYR    89      -9.452   4.198   0.070  1.00  0.53      HCKS O  
+ATOM    177  CB  TYR    89      -8.013   3.443  -2.807  1.00  0.26      HCKS C  
+ATOM    178  CG  TYR    89      -8.561   2.220  -3.502  1.00  0.29      HCKS C  
+ATOM    179  CD1 TYR    89      -9.111   2.333  -4.786  1.00  0.36      HCKS C  
+ATOM    180  CD2 TYR    89      -8.526   0.975  -2.861  1.00  0.33      HCKS C  
+ATOM    181  CE1 TYR    89      -9.627   1.199  -5.428  1.00  0.42      HCKS C  
+ATOM    182  CE2 TYR    89      -9.041  -0.158  -3.503  1.00  0.39      HCKS C  
+ATOM    183  CZ  TYR    89      -9.593  -0.046  -4.786  1.00  0.42      HCKS C  
+ATOM    184  OH  TYR    89     -10.103  -1.162  -5.418  1.00  0.51      HCKS O  
+ATOM    185  H   TYR    89      -8.244   5.877  -1.140  1.00  0.27      HCKS H  
+ATOM    186  HA  TYR    89      -9.934   4.387  -3.068  1.00  0.29      HCKS H  
+ATOM    187 1HB  TYR    89      -7.412   4.011  -3.502  1.00  0.27      HCKS H  
+ATOM    188 2HB  TYR    89      -7.402   3.137  -1.969  1.00  0.28      HCKS H  
+ATOM    189  HD1 TYR    89      -9.137   3.293  -5.280  1.00  0.40      HCKS H  
+ATOM    190  HD2 TYR    89      -8.101   0.889  -1.872  1.00  0.36      HCKS H  
+ATOM    191  HE1 TYR    89     -10.052   1.286  -6.417  1.00  0.49      HCKS H  
+ATOM    192  HE2 TYR    89      -9.015  -1.118  -3.008  1.00  0.46      HCKS H  
+ATOM    193  HH  TYR    89     -10.936  -1.386  -4.996  1.00  1.03      HCKS H  
+ATOM    194  N   GLU    90     -10.624   2.752  -1.116  1.00  0.32      HCKS N  
+ATOM    195  CA  GLU    90     -11.246   2.160   0.114  1.00  0.35      HCKS C  
+ATOM    196  C   GLU    90     -11.179   0.627   0.081  1.00  0.37      HCKS C  
+ATOM    197  O   GLU    90     -11.231   0.014  -0.967  1.00  0.57      HCKS O  
+ATOM    198  CB  GLU    90     -12.701   2.629   0.086  1.00  0.50      HCKS C  
+ATOM    199  CG  GLU    90     -13.219   2.778   1.518  1.00  1.34      HCKS C  
+ATOM    200  CD  GLU    90     -12.997   4.214   1.995  1.00  2.04      HCKS C  
+ATOM    201  OE1 GLU    90     -13.373   5.122   1.272  1.00  2.51      HCKS O  
+ATOM    202  OE2 GLU    90     -12.456   4.382   3.076  1.00  2.77      HCKS O  
+ATOM    203  H   GLU    90     -10.866   2.406  -1.999  1.00  0.44      HCKS H  
+ATOM    204  HA  GLU    90     -10.759   2.537   0.999  1.00  0.35      HCKS H  
+ATOM    205 1HB  GLU    90     -12.762   3.581  -0.421  1.00  1.07      HCKS H  
+ATOM    206 2HB  GLU    90     -13.303   1.903  -0.439  1.00  1.01      HCKS H  
+ATOM    207 1HG  GLU    90     -14.274   2.547   1.544  1.00  1.85      HCKS H  
+ATOM    208 2HG  GLU    90     -12.686   2.099   2.167  1.00  1.81      HCKS H  
+ATOM    209  N   ALA    91     -11.067   0.012   1.233  1.00  0.39      HCKS N  
+ATOM    210  CA  ALA    91     -10.994  -1.486   1.301  1.00  0.44      HCKS C  
+ATOM    211  C   ALA    91     -12.214  -2.127   0.624  1.00  0.47      HCKS C  
+ATOM    212  O   ALA    91     -13.282  -1.551   0.581  1.00  0.68      HCKS O  
+ATOM    213  CB  ALA    91     -10.981  -1.819   2.799  1.00  0.68      HCKS C  
+ATOM    214  H   ALA    91     -11.029   0.540   2.059  1.00  0.54      HCKS H  
+ATOM    215  HA  ALA    91     -10.082  -1.836   0.842  1.00  0.64      HCKS H  
+ATOM    216 1HB  ALA    91     -11.188  -0.928   3.370  1.00  1.13      HCKS H  
+ATOM    217 2HB  ALA    91     -11.735  -2.561   3.012  1.00  1.12      HCKS H  
+ATOM    218 3HB  ALA    91     -10.011  -2.203   3.072  1.00  1.47      HCKS H  
+ATOM    219  N   ILE    92     -12.054  -3.320   0.099  1.00  0.66      HCKS N  
+ATOM    220  CA  ILE    92     -13.194  -4.023  -0.574  1.00  0.93      HCKS C  
+ATOM    221  C   ILE    92     -13.161  -5.528  -0.235  1.00  1.43      HCKS C  
+ATOM    222  O   ILE    92     -14.119  -6.075   0.277  1.00  2.29      HCKS O  
+ATOM    223  CB  ILE    92     -12.970  -3.802  -2.080  1.00  1.10      HCKS C  
+ATOM    224  CG1 ILE    92     -13.038  -2.299  -2.413  1.00  1.57      HCKS C  
+ATOM    225  CG2 ILE    92     -14.036  -4.556  -2.888  1.00  2.16      HCKS C  
+ATOM    226  CD1 ILE    92     -14.440  -1.741  -2.125  1.00  1.89      HCKS C  
+ATOM    227  H   ILE    92     -11.181  -3.757   0.151  1.00  0.78      HCKS H  
+ATOM    228  HA  ILE    92     -14.139  -3.595  -0.271  1.00  0.93      HCKS H  
+ATOM    229  HB  ILE    92     -11.994  -4.181  -2.349  1.00  1.53      HCKS H  
+ATOM    230 1HG1 ILE    92     -12.312  -1.766  -1.818  1.00  2.24      HCKS H  
+ATOM    231 2HG1 ILE    92     -12.809  -2.158  -3.459  1.00  2.05      HCKS H  
+ATOM    232 1HG2 ILE    92     -14.015  -5.603  -2.624  1.00  2.67      HCKS H  
+ATOM    233 2HG2 ILE    92     -15.012  -4.148  -2.666  1.00  2.72      HCKS H  
+ATOM    234 3HG2 ILE    92     -13.833  -4.446  -3.943  1.00  2.56      HCKS H  
+ATOM    235 1HD1 ILE    92     -14.689  -1.898  -1.088  1.00  1.96      HCKS H  
+ATOM    236 2HD1 ILE    92     -14.458  -0.684  -2.343  1.00  2.31      HCKS H  
+ATOM    237 3HD1 ILE    92     -15.162  -2.248  -2.749  1.00  2.47      HCKS H  
+ATOM    238  N   HIS    93     -12.071  -6.198  -0.530  1.00  1.15      HCKS N  
+ATOM    239  CA  HIS    93     -11.979  -7.675  -0.252  1.00  1.61      HCKS C  
+ATOM    240  C   HIS    93     -11.682  -7.950   1.231  1.00  1.11      HCKS C  
+ATOM    241  O   HIS    93     -11.776  -7.074   2.068  1.00  1.37      HCKS O  
+ATOM    242  CB  HIS    93     -10.819  -8.166  -1.124  1.00  2.38      HCKS C  
+ATOM    243  CG  HIS    93     -11.145  -9.527  -1.676  1.00  3.09      HCKS C  
+ATOM    244  ND1 HIS    93     -12.093  -9.714  -2.670  1.00  3.72      HCKS N  
+ATOM    245  CD2 HIS    93     -10.668 -10.779  -1.374  1.00  3.70      HCKS C  
+ATOM    246  CE1 HIS    93     -12.157 -11.034  -2.927  1.00  4.35      HCKS C  
+ATOM    247  NE2 HIS    93     -11.309 -11.728  -2.164  1.00  4.35      HCKS N  
+ATOM    248  H   HIS    93     -11.317  -5.735  -0.951  1.00  1.06      HCKS H  
+ATOM    249  HA  HIS    93     -12.895  -8.173  -0.551  1.00  2.04      HCKS H  
+ATOM    250 1HB  HIS    93     -10.665  -7.474  -1.940  1.00  2.58      HCKS H  
+ATOM    251 2HB  HIS    93      -9.921  -8.225  -0.529  1.00  2.52      HCKS H  
+ATOM    252  HD1 HIS    93     -12.622  -9.013  -3.106  1.00  3.95      HCKS H  
+ATOM    253  HD2 HIS    93      -9.909 -10.994  -0.636  1.00  3.96      HCKS H  
+ATOM    254  HE1 HIS    93     -12.815 -11.477  -3.660  1.00  5.03      HCKS H  
+ATOM    255  N   HIS    94     -11.331  -9.174   1.556  1.00  0.99      HCKS N  
+ATOM    256  CA  HIS    94     -11.034  -9.532   2.983  1.00  0.76      HCKS C  
+ATOM    257  C   HIS    94      -9.772  -8.809   3.469  1.00  0.61      HCKS C  
+ATOM    258  O   HIS    94      -9.853  -7.828   4.185  1.00  0.91      HCKS O  
+ATOM    259  CB  HIS    94     -10.820 -11.048   2.982  1.00  1.28      HCKS C  
+ATOM    260  CG  HIS    94     -12.136 -11.738   3.219  1.00  1.60      HCKS C  
+ATOM    261  ND1 HIS    94     -13.246 -11.503   2.423  1.00  2.18      HCKS N  
+ATOM    262  CD2 HIS    94     -12.537 -12.653   4.161  1.00  2.24      HCKS C  
+ATOM    263  CE1 HIS    94     -14.252 -12.260   2.897  1.00  2.61      HCKS C  
+ATOM    264  NE2 HIS    94     -13.874 -12.981   3.956  1.00  2.64      HCKS N  
+ATOM    265  H   HIS    94     -11.270  -9.860   0.860  1.00  1.45      HCKS H  
+ATOM    266  HA  HIS    94     -11.876  -9.283   3.614  1.00  0.82      HCKS H  
+ATOM    267 1HB  HIS    94     -10.418 -11.356   2.028  1.00  1.63      HCKS H  
+ATOM    268 2HB  HIS    94     -10.129 -11.315   3.768  1.00  1.61      HCKS H  
+ATOM    269  HD1 HIS    94     -13.290 -10.895   1.656  1.00  2.65      HCKS H  
+ATOM    270  HD2 HIS    94     -11.910 -13.057   4.942  1.00  2.82      HCKS H  
+ATOM    271  HE1 HIS    94     -15.245 -12.283   2.472  1.00  3.25      HCKS H  
+ATOM    272  N   GLU    95      -8.606  -9.276   3.082  1.00  0.66      HCKS N  
+ATOM    273  CA  GLU    95      -7.339  -8.602   3.516  1.00  0.49      HCKS C  
+ATOM    274  C   GLU    95      -7.104  -7.353   2.660  1.00  0.54      HCKS C  
+ATOM    275  O   GLU    95      -6.089  -7.220   2.008  1.00  1.07      HCKS O  
+ATOM    276  CB  GLU    95      -6.232  -9.638   3.277  1.00  0.45      HCKS C  
+ATOM    277  CG  GLU    95      -5.096  -9.447   4.294  1.00  0.47      HCKS C  
+ATOM    278  CD  GLU    95      -5.623  -9.704   5.708  1.00  0.98      HCKS C  
+ATOM    279  OE1 GLU    95      -5.562 -10.842   6.143  1.00  1.75      HCKS O  
+ATOM    280  OE2 GLU    95      -6.077  -8.759   6.332  1.00  1.52      HCKS O  
+ATOM    281  H   GLU    95      -8.566 -10.063   2.500  1.00  1.04      HCKS H  
+ATOM    282  HA  GLU    95      -7.389  -8.341   4.559  1.00  0.52      HCKS H  
+ATOM    283 1HB  GLU    95      -6.644 -10.632   3.384  1.00  0.53      HCKS H  
+ATOM    284 2HB  GLU    95      -5.839  -9.517   2.277  1.00  0.60      HCKS H  
+ATOM    285 1HG  GLU    95      -4.301 -10.146   4.076  1.00  0.69      HCKS H  
+ATOM    286 2HG  GLU    95      -4.711  -8.438   4.231  1.00  0.66      HCKS H  
+ATOM    287  N   ASP    96      -8.045  -6.443   2.659  1.00  0.41      HCKS N  
+ATOM    288  CA  ASP    96      -7.905  -5.199   1.843  1.00  0.39      HCKS C  
+ATOM    289  C   ASP    96      -7.389  -4.047   2.711  1.00  0.41      HCKS C  
+ATOM    290  O   ASP    96      -7.195  -4.203   3.903  1.00  0.78      HCKS O  
+ATOM    291  CB  ASP    96      -9.320  -4.904   1.332  1.00  0.52      HCKS C  
+ATOM    292  CG  ASP    96     -10.302  -4.729   2.504  1.00  0.70      HCKS C  
+ATOM    293  OD1 ASP    96      -9.858  -4.711   3.643  1.00  1.42      HCKS O  
+ATOM    294  OD2 ASP    96     -11.487  -4.627   2.241  1.00  1.26      HCKS O  
+ATOM    295  H   ASP    96      -8.848  -6.580   3.196  1.00  0.78      HCKS H  
+ATOM    296  HA  ASP    96      -7.247  -5.369   1.005  1.00  0.39      HCKS H  
+ATOM    297 1HB  ASP    96      -9.302  -4.000   0.742  1.00  0.93      HCKS H  
+ATOM    298 2HB  ASP    96      -9.648  -5.728   0.713  1.00  1.02      HCKS H  
+ATOM    299  N   LEU    97      -7.158  -2.899   2.125  1.00  0.35      HCKS N  
+ATOM    300  CA  LEU    97      -6.647  -1.742   2.919  1.00  0.39      HCKS C  
+ATOM    301  C   LEU    97      -7.067  -0.417   2.273  1.00  0.33      HCKS C  
+ATOM    302  O   LEU    97      -6.878  -0.206   1.089  1.00  0.35      HCKS O  
+ATOM    303  CB  LEU    97      -5.126  -1.894   2.896  1.00  0.54      HCKS C  
+ATOM    304  CG  LEU    97      -4.486  -0.803   3.757  1.00  0.66      HCKS C  
+ATOM    305  CD1 LEU    97      -4.726  -1.110   5.238  1.00  1.06      HCKS C  
+ATOM    306  CD2 LEU    97      -2.979  -0.753   3.482  1.00  1.19      HCKS C  
+ATOM    307  H   LEU    97      -7.318  -2.800   1.163  1.00  0.59      HCKS H  
+ATOM    308  HA  LEU    97      -7.006  -1.796   3.933  1.00  0.46      HCKS H  
+ATOM    309 1HB  LEU    97      -4.856  -2.866   3.288  1.00  0.65      HCKS H  
+ATOM    310 2HB  LEU    97      -4.770  -1.802   1.880  1.00  0.59      HCKS H  
+ATOM    311  HG  LEU    97      -4.929   0.151   3.513  1.00  1.31      HCKS H  
+ATOM    312 1HD1 LEU    97      -5.602  -1.732   5.341  1.00  1.49      HCKS H  
+ATOM    313 2HD1 LEU    97      -3.868  -1.626   5.643  1.00  1.65      HCKS H  
+ATOM    314 3HD1 LEU    97      -4.876  -0.186   5.777  1.00  1.64      HCKS H  
+ATOM    315 1HD2 LEU    97      -2.775  -1.178   2.510  1.00  1.81      HCKS H  
+ATOM    316 2HD2 LEU    97      -2.644   0.273   3.503  1.00  1.70      HCKS H  
+ATOM    317 3HD2 LEU    97      -2.455  -1.318   4.239  1.00  1.65      HCKS H  
+ATOM    318  N   SER    98      -7.634   0.476   3.047  1.00  0.33      HCKS N  
+ATOM    319  CA  SER    98      -8.064   1.792   2.491  1.00  0.34      HCKS C  
+ATOM    320  C   SER    98      -6.976   2.842   2.707  1.00  0.36      HCKS C  
+ATOM    321  O   SER    98      -6.462   3.000   3.798  1.00  0.73      HCKS O  
+ATOM    322  CB  SER    98      -9.320   2.171   3.272  1.00  0.41      HCKS C  
+ATOM    323  OG  SER    98     -10.130   1.019   3.454  1.00  0.46      HCKS O  
+ATOM    324  H   SER    98      -7.773   0.280   3.997  1.00  0.36      HCKS H  
+ATOM    325  HA  SER    98      -8.292   1.699   1.446  1.00  0.34      HCKS H  
+ATOM    326 1HB  SER    98      -9.041   2.563   4.235  1.00  0.48      HCKS H  
+ATOM    327 2HB  SER    98      -9.868   2.927   2.726  1.00  0.53      HCKS H  
+ATOM    328  HG  SER    98     -10.630   1.133   4.266  1.00  0.71      HCKS H  
+ATOM    329  N   PHE    99      -6.631   3.567   1.674  1.00  0.27      HCKS N  
+ATOM    330  CA  PHE    99      -5.582   4.627   1.811  1.00  0.26      HCKS C  
+ATOM    331  C   PHE    99      -6.055   5.928   1.159  1.00  0.25      HCKS C  
+ATOM    332  O   PHE    99      -7.181   6.034   0.709  1.00  0.27      HCKS O  
+ATOM    333  CB  PHE    99      -4.316   4.094   1.117  1.00  0.26      HCKS C  
+ATOM    334  CG  PHE    99      -4.625   3.528  -0.257  1.00  0.25      HCKS C  
+ATOM    335  CD1 PHE    99      -4.809   4.385  -1.348  1.00  0.22      HCKS C  
+ATOM    336  CD2 PHE    99      -4.696   2.141  -0.439  1.00  0.28      HCKS C  
+ATOM    337  CE1 PHE    99      -5.065   3.856  -2.621  1.00  0.23      HCKS C  
+ATOM    338  CE2 PHE    99      -4.958   1.613  -1.710  1.00  0.29      HCKS C  
+ATOM    339  CZ  PHE    99      -5.141   2.472  -2.800  1.00  0.27      HCKS C  
+ATOM    340  H   PHE    99      -7.069   3.422   0.810  1.00  0.53      HCKS H  
+ATOM    341  HA  PHE    99      -5.371   4.804   2.858  1.00  0.29      HCKS H  
+ATOM    342 1HB  PHE    99      -3.606   4.901   1.012  1.00  0.27      HCKS H  
+ATOM    343 2HB  PHE    99      -3.880   3.321   1.730  1.00  0.30      HCKS H  
+ATOM    344  HD1 PHE    99      -4.758   5.455  -1.209  1.00  0.22      HCKS H  
+ATOM    345  HD2 PHE    99      -4.555   1.478   0.402  1.00  0.32      HCKS H  
+ATOM    346  HE1 PHE    99      -5.206   4.517  -3.465  1.00  0.24      HCKS H  
+ATOM    347  HE2 PHE    99      -5.016   0.544  -1.849  1.00  0.33      HCKS H  
+ATOM    348  HZ  PHE    99      -5.339   2.064  -3.781  1.00  0.29      HCKS H  
+ATOM    349  N   GLN   100      -5.209   6.925   1.134  1.00  0.25      HCKS N  
+ATOM    350  CA  GLN   100      -5.602   8.235   0.540  1.00  0.26      HCKS C  
+ATOM    351  C   GLN   100      -4.674   8.617  -0.617  1.00  0.26      HCKS C  
+ATOM    352  O   GLN   100      -3.760   7.899  -0.972  1.00  0.26      HCKS O  
+ATOM    353  CB  GLN   100      -5.488   9.246   1.688  1.00  0.30      HCKS C  
+ATOM    354  CG  GLN   100      -6.799  10.023   1.818  1.00  0.43      HCKS C  
+ATOM    355  CD  GLN   100      -6.981  10.485   3.266  1.00  0.50      HCKS C  
+ATOM    356  OE1 GLN   100      -6.042  10.926   3.897  1.00  1.17      HCKS O  
+ATOM    357  NE2 GLN   100      -8.159  10.402   3.820  1.00  1.29      HCKS N  
+ATOM    358  H   GLN   100      -4.322   6.817   1.523  1.00  0.25      HCKS H  
+ATOM    359  HA  GLN   100      -6.624   8.190   0.189  1.00  0.28      HCKS H  
+ATOM    360 1HB  GLN   100      -5.288   8.723   2.612  1.00  0.35      HCKS H  
+ATOM    361 2HB  GLN   100      -4.683   9.936   1.485  1.00  0.42      HCKS H  
+ATOM    362 1HG  GLN   100      -6.774  10.883   1.165  1.00  0.75      HCKS H  
+ATOM    363 2HG  GLN   100      -7.622   9.382   1.540  1.00  0.68      HCKS H  
+ATOM    364 1HE2 GLN   100      -8.287  10.695   4.747  1.00  1.44      HCKS H  
+ATOM    365 2HE2 GLN   100      -8.917  10.046   3.310  1.00  2.01      HCKS H  
+ATOM    366  N   LYS   101      -4.952   9.732  -1.228  1.00  0.28      HCKS N  
+ATOM    367  CA  LYS   101      -4.152  10.202  -2.403  1.00  0.29      HCKS C  
+ATOM    368  C   LYS   101      -2.678  10.452  -2.100  1.00  0.29      HCKS C  
+ATOM    369  O   LYS   101      -1.855  10.482  -2.994  1.00  0.46      HCKS O  
+ATOM    370  CB  LYS   101      -4.818  11.490  -2.833  1.00  0.34      HCKS C  
+ATOM    371  CG  LYS   101      -4.307  11.870  -4.210  1.00  0.39      HCKS C  
+ATOM    372  CD  LYS   101      -5.420  12.576  -4.977  1.00  0.43      HCKS C  
+ATOM    373  CE  LYS   101      -6.479  11.551  -5.397  1.00  0.42      HCKS C  
+ATOM    374  NZ  LYS   101      -7.557  12.353  -6.039  1.00  0.51      HCKS N  
+ATOM    375  H   LYS   101      -5.722  10.261  -0.925  1.00  0.30      HCKS H  
+ATOM    376  HA  LYS   101      -4.226   9.494  -3.183  1.00  0.31      HCKS H  
+ATOM    377 1HB  LYS   101      -5.885  11.349  -2.859  1.00  0.37      HCKS H  
+ATOM    378 2HB  LYS   101      -4.578  12.266  -2.138  1.00  0.36      HCKS H  
+ATOM    379 1HG  LYS   101      -3.455  12.526  -4.104  1.00  0.42      HCKS H  
+ATOM    380 2HG  LYS   101      -4.011  10.980  -4.739  1.00  0.38      HCKS H  
+ATOM    381 1HD  LYS   101      -5.871  13.322  -4.339  1.00  0.44      HCKS H  
+ATOM    382 2HD  LYS   101      -5.009  13.050  -5.855  1.00  0.46      HCKS H  
+ATOM    383 1HE  LYS   101      -6.060  10.847  -6.102  1.00  0.45      HCKS H  
+ATOM    384 2HE  LYS   101      -6.869  11.032  -4.532  1.00  0.40      HCKS H  
+ATOM    385 1HZ  LYS   101      -7.932  13.041  -5.356  1.00  1.20      HCKS H  
+ATOM    386 2HZ  LYS   101      -7.170  12.860  -6.860  1.00  1.01      HCKS H  
+ATOM    387 3HZ  LYS   101      -8.322  11.720  -6.350  1.00  1.12      HCKS H  
+ATOM    388  N   GLY   102      -2.349  10.659  -0.874  1.00  0.27      HCKS N  
+ATOM    389  CA  GLY   102      -0.925  10.933  -0.508  1.00  0.29      HCKS C  
+ATOM    390  C   GLY   102      -0.582  10.193   0.779  1.00  0.27      HCKS C  
+ATOM    391  O   GLY   102       0.084  10.720   1.650  1.00  0.30      HCKS O  
+ATOM    392  H   GLY   102      -3.040  10.650  -0.198  1.00  0.36      HCKS H  
+ATOM    393 1HA  GLY   102      -0.276  10.592  -1.305  1.00  0.32      HCKS H  
+ATOM    394 2HA  GLY   102      -0.788  11.995  -0.358  1.00  0.35      HCKS H  
+ATOM    395  N   ASP   103      -1.040   8.977   0.904  1.00  0.24      HCKS N  
+ATOM    396  CA  ASP   103      -0.745   8.191   2.156  1.00  0.23      HCKS C  
+ATOM    397  C   ASP   103       0.536   7.363   2.012  1.00  0.22      HCKS C  
+ATOM    398  O   ASP   103       1.082   7.230   0.939  1.00  0.23      HCKS O  
+ATOM    399  CB  ASP   103      -1.951   7.281   2.371  1.00  0.22      HCKS C  
+ATOM    400  CG  ASP   103      -2.982   8.002   3.243  1.00  0.25      HCKS C  
+ATOM    401  OD1 ASP   103      -3.126   9.203   3.086  1.00  1.08      HCKS O  
+ATOM    402  OD2 ASP   103      -3.609   7.340   4.054  1.00  1.06      HCKS O  
+ATOM    403  H   ASP   103      -1.576   8.580   0.168  1.00  0.23      HCKS H  
+ATOM    404  HA  ASP   103      -0.652   8.864   2.996  1.00  0.26      HCKS H  
+ATOM    405 1HB  ASP   103      -2.391   7.040   1.419  1.00  0.21      HCKS H  
+ATOM    406 2HB  ASP   103      -1.634   6.372   2.864  1.00  0.21      HCKS H  
+ATOM    407  N   GLN   104       1.005   6.787   3.093  1.00  0.22      HCKS N  
+ATOM    408  CA  GLN   104       2.234   5.950   3.034  1.00  0.23      HCKS C  
+ATOM    409  C   GLN   104       1.944   4.545   3.563  1.00  0.22      HCKS C  
+ATOM    410  O   GLN   104       1.348   4.373   4.609  1.00  0.29      HCKS O  
+ATOM    411  CB  GLN   104       3.249   6.661   3.927  1.00  0.27      HCKS C  
+ATOM    412  CG  GLN   104       4.057   7.655   3.091  1.00  0.29      HCKS C  
+ATOM    413  CD  GLN   104       5.498   7.699   3.603  1.00  0.38      HCKS C  
+ATOM    414  OE1 GLN   104       6.029   8.758   3.871  1.00  0.46      HCKS O  
+ATOM    415  NE2 GLN   104       6.158   6.582   3.751  1.00  0.43      HCKS N  
+ATOM    416  H   GLN   104       0.541   6.898   3.944  1.00  0.23      HCKS H  
+ATOM    417  HA  GLN   104       2.602   5.901   2.023  1.00  0.23      HCKS H  
+ATOM    418 1HB  GLN   104       2.728   7.190   4.712  1.00  0.28      HCKS H  
+ATOM    419 2HB  GLN   104       3.916   5.933   4.363  1.00  0.28      HCKS H  
+ATOM    420 1HG  GLN   104       4.051   7.340   2.057  1.00  0.29      HCKS H  
+ATOM    421 2HG  GLN   104       3.617   8.639   3.172  1.00  0.29      HCKS H  
+ATOM    422 1HE2 GLN   104       7.081   6.597   4.080  1.00  0.50      HCKS H  
+ATOM    423 2HE2 GLN   104       5.729   5.728   3.535  1.00  0.43      HCKS H  
+ATOM    424  N   MET   105       2.371   3.546   2.842  1.00  0.22      HCKS N  
+ATOM    425  CA  MET   105       2.142   2.136   3.275  1.00  0.22      HCKS C  
+ATOM    426  C   MET   105       3.399   1.316   3.013  1.00  0.21      HCKS C  
+ATOM    427  O   MET   105       4.135   1.579   2.083  1.00  0.27      HCKS O  
+ATOM    428  CB  MET   105       0.987   1.633   2.405  1.00  0.25      HCKS C  
+ATOM    429  CG  MET   105      -0.256   2.492   2.648  1.00  0.30      HCKS C  
+ATOM    430  SD  MET   105      -1.621   1.885   1.625  1.00  1.13      HCKS S  
+ATOM    431  CE  MET   105      -0.967   2.407   0.019  1.00  0.36      HCKS C  
+ATOM    432  H   MET   105       2.851   3.723   2.006  1.00  0.28      HCKS H  
+ATOM    433  HA  MET   105       1.871   2.085   4.318  1.00  0.21      HCKS H  
+ATOM    434 1HB  MET   105       1.269   1.694   1.364  1.00  0.26      HCKS H  
+ATOM    435 2HB  MET   105       0.768   0.607   2.659  1.00  0.32      HCKS H  
+ATOM    436 1HG  MET   105      -0.535   2.433   3.689  1.00  0.72      HCKS H  
+ATOM    437 2HG  MET   105      -0.040   3.518   2.392  1.00  0.75      HCKS H  
+ATOM    438 1HE  MET   105      -0.347   3.283   0.151  1.00  1.00      HCKS H  
+ATOM    439 2HE  MET   105      -0.377   1.612  -0.406  1.00  1.12      HCKS H  
+ATOM    440 3HE  MET   105      -1.790   2.638  -0.645  1.00  1.13      HCKS H  
+ATOM    441  N   VAL   106       3.648   0.324   3.820  1.00  0.19      HCKS N  
+ATOM    442  CA  VAL   106       4.853  -0.525   3.606  1.00  0.21      HCKS C  
+ATOM    443  C   VAL   106       4.424  -1.768   2.838  1.00  0.18      HCKS C  
+ATOM    444  O   VAL   106       3.289  -2.182   2.918  1.00  0.18      HCKS O  
+ATOM    445  CB  VAL   106       5.358  -0.909   5.000  1.00  0.28      HCKS C  
+ATOM    446  CG1 VAL   106       6.680  -1.665   4.878  1.00  0.99      HCKS C  
+ATOM    447  CG2 VAL   106       5.573   0.350   5.849  1.00  0.83      HCKS C  
+ATOM    448  H   VAL   106       3.035   0.130   4.560  1.00  0.20      HCKS H  
+ATOM    449  HA  VAL   106       5.611   0.020   3.065  1.00  0.27      HCKS H  
+ATOM    450  HB  VAL   106       4.634  -1.550   5.471  1.00  0.87      HCKS H  
+ATOM    451 1HG1 VAL   106       6.578  -2.452   4.147  1.00  1.55      HCKS H  
+ATOM    452 2HG1 VAL   106       7.457  -0.985   4.570  1.00  1.54      HCKS H  
+ATOM    453 3HG1 VAL   106       6.935  -2.095   5.837  1.00  1.49      HCKS H  
+ATOM    454 1HG2 VAL   106       5.801   1.185   5.202  1.00  1.52      HCKS H  
+ATOM    455 2HG2 VAL   106       4.676   0.565   6.410  1.00  1.35      HCKS H  
+ATOM    456 3HG2 VAL   106       6.395   0.189   6.531  1.00  1.46      HCKS H  
+ATOM    457  N   VAL   107       5.311  -2.375   2.110  1.00  0.20      HCKS N  
+ATOM    458  CA  VAL   107       4.924  -3.603   1.347  1.00  0.21      HCKS C  
+ATOM    459  C   VAL   107       5.353  -4.844   2.126  1.00  0.20      HCKS C  
+ATOM    460  O   VAL   107       6.428  -4.906   2.689  1.00  0.22      HCKS O  
+ATOM    461  CB  VAL   107       5.635  -3.523  -0.011  1.00  0.27      HCKS C  
+ATOM    462  CG1 VAL   107       5.301  -4.766  -0.843  1.00  0.37      HCKS C  
+ATOM    463  CG2 VAL   107       5.161  -2.278  -0.763  1.00  0.28      HCKS C  
+ATOM    464  H   VAL   107       6.225  -2.034   2.073  1.00  0.23      HCKS H  
+ATOM    465  HA  VAL   107       3.853  -3.615   1.188  1.00  0.22      HCKS H  
+ATOM    466  HB  VAL   107       6.696  -3.475   0.136  1.00  0.35      HCKS H  
+ATOM    467 1HG1 VAL   107       5.503  -5.654  -0.261  1.00  1.08      HCKS H  
+ATOM    468 2HG1 VAL   107       4.257  -4.745  -1.119  1.00  1.04      HCKS H  
+ATOM    469 3HG1 VAL   107       5.909  -4.776  -1.735  1.00  1.15      HCKS H  
+ATOM    470 1HG2 VAL   107       5.226  -1.417  -0.114  1.00  1.05      HCKS H  
+ATOM    471 2HG2 VAL   107       5.786  -2.122  -1.630  1.00  1.11      HCKS H  
+ATOM    472 3HG2 VAL   107       4.137  -2.415  -1.079  1.00  1.01      HCKS H  
+ATOM    473  N   LEU   108       4.511  -5.828   2.142  1.00  0.22      HCKS N  
+ATOM    474  CA  LEU   108       4.812  -7.089   2.863  1.00  0.24      HCKS C  
+ATOM    475  C   LEU   108       5.427  -8.088   1.881  1.00  0.26      HCKS C  
+ATOM    476  O   LEU   108       6.275  -8.884   2.233  1.00  0.28      HCKS O  
+ATOM    477  CB  LEU   108       3.440  -7.590   3.340  1.00  0.27      HCKS C  
+ATOM    478  CG  LEU   108       2.978  -6.805   4.572  1.00  0.27      HCKS C  
+ATOM    479  CD1 LEU   108       2.137  -5.610   4.136  1.00  0.22      HCKS C  
+ATOM    480  CD2 LEU   108       2.125  -7.712   5.466  1.00  0.35      HCKS C  
+ATOM    481  H   LEU   108       3.664  -5.736   1.669  1.00  0.23      HCKS H  
+ATOM    482  HA  LEU   108       5.466  -6.912   3.703  1.00  0.25      HCKS H  
+ATOM    483 1HB  LEU   108       2.719  -7.463   2.546  1.00  0.28      HCKS H  
+ATOM    484 2HB  LEU   108       3.509  -8.633   3.591  1.00  0.32      HCKS H  
+ATOM    485  HG  LEU   108       3.836  -6.452   5.121  1.00  0.28      HCKS H  
+ATOM    486 1HD1 LEU   108       1.638  -5.841   3.208  1.00  1.04      HCKS H  
+ATOM    487 2HD1 LEU   108       1.401  -5.392   4.895  1.00  1.00      HCKS H  
+ATOM    488 3HD1 LEU   108       2.776  -4.751   3.995  1.00  0.96      HCKS H  
+ATOM    489 1HD2 LEU   108       2.508  -8.721   5.427  1.00  1.02      HCKS H  
+ATOM    490 2HD2 LEU   108       2.161  -7.352   6.483  1.00  1.17      HCKS H  
+ATOM    491 3HD2 LEU   108       1.098  -7.704   5.118  1.00  1.03      HCKS H  
+ATOM    492  N   GLU   109       5.005  -8.033   0.644  1.00  0.28      HCKS N  
+ATOM    493  CA  GLU   109       5.552  -8.962  -0.390  1.00  0.31      HCKS C  
+ATOM    494  C   GLU   109       5.400  -8.348  -1.787  1.00  0.34      HCKS C  
+ATOM    495  O   GLU   109       4.767  -7.323  -1.956  1.00  0.50      HCKS O  
+ATOM    496  CB  GLU   109       4.707 -10.231  -0.267  1.00  0.37      HCKS C  
+ATOM    497  CG  GLU   109       5.345 -11.171   0.760  1.00  0.39      HCKS C  
+ATOM    498  CD  GLU   109       5.121 -12.623   0.334  1.00  0.53      HCKS C  
+ATOM    499  OE1 GLU   109       5.425 -12.939  -0.804  1.00  1.24      HCKS O  
+ATOM    500  OE2 GLU   109       4.650 -13.394   1.154  1.00  1.19      HCKS O  
+ATOM    501  H   GLU   109       4.334  -7.366   0.392  1.00  0.28      HCKS H  
+ATOM    502  HA  GLU   109       6.585  -9.187  -0.186  1.00  0.29      HCKS H  
+ATOM    503 1HB  GLU   109       3.711  -9.968   0.055  1.00  0.38      HCKS H  
+ATOM    504 2HB  GLU   109       4.659 -10.727  -1.224  1.00  0.41      HCKS H  
+ATOM    505 1HG  GLU   109       6.405 -10.972   0.820  1.00  0.43      HCKS H  
+ATOM    506 2HG  GLU   109       4.892 -11.007   1.726  1.00  0.39      HCKS H  
+ATOM    507  N   GLU   110       5.968  -8.976  -2.786  1.00  0.35      HCKS N  
+ATOM    508  CA  GLU   110       5.857  -8.446  -4.182  1.00  0.37      HCKS C  
+ATOM    509  C   GLU   110       5.291  -9.533  -5.104  1.00  0.48      HCKS C  
+ATOM    510  O   GLU   110       5.897 -10.572  -5.290  1.00  0.86      HCKS O  
+ATOM    511  CB  GLU   110       7.291  -8.097  -4.587  1.00  0.40      HCKS C  
+ATOM    512  CG  GLU   110       7.728  -6.812  -3.877  1.00  0.97      HCKS C  
+ATOM    513  CD  GLU   110       9.209  -6.550  -4.159  1.00  1.39      HCKS C  
+ATOM    514  OE1 GLU   110       9.590  -6.603  -5.317  1.00  2.11      HCKS O  
+ATOM    515  OE2 GLU   110       9.937  -6.300  -3.212  1.00  1.83      HCKS O  
+ATOM    516  H   GLU   110       6.465  -9.803  -2.620  1.00  0.47      HCKS H  
+ATOM    517  HA  GLU   110       5.237  -7.560  -4.212  1.00  0.37      HCKS H  
+ATOM    518 1HB  GLU   110       7.950  -8.905  -4.306  1.00  0.71      HCKS H  
+ATOM    519 2HB  GLU   110       7.338  -7.949  -5.655  1.00  0.75      HCKS H  
+ATOM    520 1HG  GLU   110       7.138  -5.981  -4.241  1.00  1.37      HCKS H  
+ATOM    521 2HG  GLU   110       7.581  -6.921  -2.812  1.00  1.52      HCKS H  
+ATOM    522  N   SER   111       4.133  -9.305  -5.672  1.00  0.48      HCKS N  
+ATOM    523  CA  SER   111       3.521 -10.327  -6.575  1.00  0.57      HCKS C  
+ATOM    524  C   SER   111       3.545  -9.839  -8.027  1.00  0.59      HCKS C  
+ATOM    525  O   SER   111       4.319 -10.316  -8.834  1.00  0.94      HCKS O  
+ATOM    526  CB  SER   111       2.082 -10.483  -6.086  1.00  0.72      HCKS C  
+ATOM    527  OG  SER   111       1.341 -11.229  -7.042  1.00  0.90      HCKS O  
+ATOM    528  H   SER   111       3.663  -8.463  -5.499  1.00  0.70      HCKS H  
+ATOM    529  HA  SER   111       4.043 -11.267  -6.487  1.00  0.61      HCKS H  
+ATOM    530 1HB  SER   111       2.074 -11.006  -5.144  1.00  0.80      HCKS H  
+ATOM    531 2HB  SER   111       1.639  -9.504  -5.955  1.00  0.81      HCKS H  
+ATOM    532  HG  SER   111       0.450 -11.346  -6.703  1.00  1.25      HCKS H  
+ATOM    533  N   GLY   112       2.702  -8.892  -8.362  1.00  0.70      HCKS N  
+ATOM    534  CA  GLY   112       2.675  -8.376  -9.763  1.00  0.74      HCKS C  
+ATOM    535  C   GLY   112       1.576  -7.319  -9.919  1.00  0.81      HCKS C  
+ATOM    536  O   GLY   112       1.800  -6.144  -9.703  1.00  1.63      HCKS O  
+ATOM    537  H   GLY   112       2.087  -8.524  -7.693  1.00  1.03      HCKS H  
+ATOM    538 1HA  GLY   112       3.633  -7.935  -9.999  1.00  0.84      HCKS H  
+ATOM    539 2HA  GLY   112       2.481  -9.192 -10.441  1.00  0.85      HCKS H  
+ATOM    540  N   GLU   113       0.395  -7.731 -10.307  1.00  0.52      HCKS N  
+ATOM    541  CA  GLU   113      -0.728  -6.754 -10.501  1.00  0.55      HCKS C  
+ATOM    542  C   GLU   113      -1.119  -6.085  -9.175  1.00  0.47      HCKS C  
+ATOM    543  O   GLU   113      -1.290  -4.881  -9.108  1.00  0.60      HCKS O  
+ATOM    544  CB  GLU   113      -1.894  -7.586 -11.041  1.00  0.81      HCKS C  
+ATOM    545  CG  GLU   113      -1.503  -8.212 -12.381  1.00  1.51      HCKS C  
+ATOM    546  CD  GLU   113      -1.602  -7.159 -13.487  1.00  2.14      HCKS C  
+ATOM    547  OE1 GLU   113      -2.644  -6.534 -13.591  1.00  2.79      HCKS O  
+ATOM    548  OE2 GLU   113      -0.633  -6.996 -14.210  1.00  2.60      HCKS O  
+ATOM    549  H   GLU   113       0.249  -8.685 -10.482  1.00  1.03      HCKS H  
+ATOM    550  HA  GLU   113      -0.448  -6.007 -11.226  1.00  0.66      HCKS H  
+ATOM    551 1HB  GLU   113      -2.136  -8.367 -10.334  1.00  1.11      HCKS H  
+ATOM    552 2HB  GLU   113      -2.755  -6.949 -11.181  1.00  1.40      HCKS H  
+ATOM    553 1HG  GLU   113      -0.489  -8.581 -12.325  1.00  1.94      HCKS H  
+ATOM    554 2HG  GLU   113      -2.171  -9.030 -12.605  1.00  1.94      HCKS H  
+ATOM    555  N   TRP   114      -1.275  -6.856  -8.129  1.00  0.44      HCKS N  
+ATOM    556  CA  TRP   114      -1.663  -6.270  -6.809  1.00  0.37      HCKS C  
+ATOM    557  C   TRP   114      -0.678  -6.739  -5.731  1.00  0.32      HCKS C  
+ATOM    558  O   TRP   114      -0.271  -7.884  -5.717  1.00  0.35      HCKS O  
+ATOM    559  CB  TRP   114      -3.067  -6.815  -6.524  1.00  0.43      HCKS C  
+ATOM    560  CG  TRP   114      -4.089  -6.121  -7.378  1.00  0.42      HCKS C  
+ATOM    561  CD1 TRP   114      -4.209  -6.257  -8.720  1.00  0.57      HCKS C  
+ATOM    562  CD2 TRP   114      -5.152  -5.207  -6.966  1.00  0.48      HCKS C  
+ATOM    563  NE1 TRP   114      -5.268  -5.480  -9.157  1.00  0.66      HCKS N  
+ATOM    564  CE2 TRP   114      -5.882  -4.816  -8.113  1.00  0.59      HCKS C  
+ATOM    565  CE3 TRP   114      -5.547  -4.684  -5.721  1.00  0.64      HCKS C  
+ATOM    566  CZ2 TRP   114      -6.966  -3.939  -8.028  1.00  0.74      HCKS C  
+ATOM    567  CZ3 TRP   114      -6.638  -3.803  -5.630  1.00  0.81      HCKS C  
+ATOM    568  CH2 TRP   114      -7.346  -3.431  -6.783  1.00  0.82      HCKS C  
+ATOM    569  H   TRP   114      -1.142  -7.822  -8.211  1.00  0.57      HCKS H  
+ATOM    570  HA  TRP   114      -1.685  -5.194  -6.862  1.00  0.39      HCKS H  
+ATOM    571 1HB  TRP   114      -3.087  -7.872  -6.737  1.00  0.49      HCKS H  
+ATOM    572 2HB  TRP   114      -3.305  -6.657  -5.482  1.00  0.54      HCKS H  
+ATOM    573  HD1 TRP   114      -3.581  -6.869  -9.349  1.00  0.70      HCKS H  
+ATOM    574  HE1 TRP   114      -5.564  -5.400 -10.088  1.00  0.82      HCKS H  
+ATOM    575  HE3 TRP   114      -5.009  -4.964  -4.827  1.00  0.71      HCKS H  
+ATOM    576  HZ2 TRP   114      -7.507  -3.656  -8.919  1.00  0.86      HCKS H  
+ATOM    577  HZ3 TRP   114      -6.933  -3.410  -4.668  1.00  0.99      HCKS H  
+ATOM    578  HH2 TRP   114      -8.183  -2.753  -6.708  1.00  0.98      HCKS H  
+ATOM    579  N   TRP   115      -0.288  -5.865  -4.834  1.00  0.30      HCKS N  
+ATOM    580  CA  TRP   115       0.681  -6.266  -3.759  1.00  0.27      HCKS C  
+ATOM    581  C   TRP   115       0.040  -6.119  -2.375  1.00  0.24      HCKS C  
+ATOM    582  O   TRP   115      -0.932  -5.411  -2.202  1.00  0.26      HCKS O  
+ATOM    583  CB  TRP   115       1.865  -5.293  -3.888  1.00  0.30      HCKS C  
+ATOM    584  CG  TRP   115       2.458  -5.327  -5.271  1.00  0.29      HCKS C  
+ATOM    585  CD1 TRP   115       2.422  -6.381  -6.128  1.00  0.32      HCKS C  
+ATOM    586  CD2 TRP   115       3.190  -4.270  -5.961  1.00  0.36      HCKS C  
+ATOM    587  NE1 TRP   115       3.079  -6.031  -7.296  1.00  0.35      HCKS N  
+ATOM    588  CE2 TRP   115       3.569  -4.742  -7.242  1.00  0.41      HCKS C  
+ATOM    589  CE3 TRP   115       3.555  -2.957  -5.604  1.00  0.45      HCKS C  
+ATOM    590  CZ2 TRP   115       4.285  -3.942  -8.135  1.00  0.54      HCKS C  
+ATOM    591  CZ3 TRP   115       4.276  -2.150  -6.501  1.00  0.59      HCKS C  
+ATOM    592  CH2 TRP   115       4.640  -2.642  -7.764  1.00  0.64      HCKS C  
+ATOM    593  H   TRP   115      -0.626  -4.946  -4.869  1.00  0.35      HCKS H  
+ATOM    594  HA  TRP   115       1.021  -7.281  -3.911  1.00  0.28      HCKS H  
+ATOM    595 1HB  TRP   115       1.525  -4.289  -3.677  1.00  0.36      HCKS H  
+ATOM    596 2HB  TRP   115       2.626  -5.568  -3.170  1.00  0.36      HCKS H  
+ATOM    597  HD1 TRP   115       1.955  -7.334  -5.932  1.00  0.37      HCKS H  
+ATOM    598  HE1 TRP   115       3.193  -6.612  -8.076  1.00  0.38      HCKS H  
+ATOM    599  HE3 TRP   115       3.281  -2.569  -4.634  1.00  0.43      HCKS H  
+ATOM    600  HZ2 TRP   115       4.562  -4.325  -9.106  1.00  0.58      HCKS H  
+ATOM    601  HZ3 TRP   115       4.551  -1.145  -6.217  1.00  0.68      HCKS H  
+ATOM    602  HH2 TRP   115       5.194  -2.017  -8.449  1.00  0.76      HCKS H  
+ATOM    603  N   LYS   116       0.596  -6.772  -1.385  1.00  0.22      HCKS N  
+ATOM    604  CA  LYS   116       0.036  -6.676   0.003  1.00  0.21      HCKS C  
+ATOM    605  C   LYS   116       0.861  -5.680   0.832  1.00  0.20      HCKS C  
+ATOM    606  O   LYS   116       2.041  -5.881   1.019  1.00  0.27      HCKS O  
+ATOM    607  CB  LYS   116       0.183  -8.090   0.575  1.00  0.22      HCKS C  
+ATOM    608  CG  LYS   116      -1.093  -8.486   1.321  1.00  0.45      HCKS C  
+ATOM    609  CD  LYS   116      -0.889  -9.850   1.981  1.00  0.72      HCKS C  
+ATOM    610  CE  LYS   116      -1.910 -10.033   3.106  1.00  0.84      HCKS C  
+ATOM    611  NZ  LYS   116      -2.173 -11.499   3.152  1.00  1.41      HCKS N  
+ATOM    612  H   LYS   116       1.390  -7.323  -1.553  1.00  0.23      HCKS H  
+ATOM    613  HA  LYS   116      -1.005  -6.396  -0.026  1.00  0.22      HCKS H  
+ATOM    614 1HB  LYS   116       0.356  -8.789  -0.232  1.00  0.36      HCKS H  
+ATOM    615 2HB  LYS   116       1.018  -8.120   1.258  1.00  0.31      HCKS H  
+ATOM    616 1HG  LYS   116      -1.314  -7.747   2.079  1.00  0.54      HCKS H  
+ATOM    617 2HG  LYS   116      -1.915  -8.544   0.624  1.00  0.58      HCKS H  
+ATOM    618 1HD  LYS   116      -1.020 -10.630   1.244  1.00  0.97      HCKS H  
+ATOM    619 2HD  LYS   116       0.109  -9.906   2.390  1.00  1.02      HCKS H  
+ATOM    620 1HE  LYS   116      -1.496  -9.693   4.046  1.00  1.09      HCKS H  
+ATOM    621 2HE  LYS   116      -2.820  -9.501   2.879  1.00  1.20      HCKS H  
+ATOM    622 1HZ  LYS   116      -1.285 -12.005   3.339  1.00  1.86      HCKS H  
+ATOM    623 2HZ  LYS   116      -2.854 -11.706   3.909  1.00  1.80      HCKS H  
+ATOM    624 3HZ  LYS   116      -2.565 -11.808   2.238  1.00  1.93      HCKS H  
+ATOM    625  N   ALA   117       0.263  -4.615   1.330  1.00  0.17      HCKS N  
+ATOM    626  CA  ALA   117       1.054  -3.622   2.134  1.00  0.17      HCKS C  
+ATOM    627  C   ALA   117       0.384  -3.284   3.482  1.00  0.17      HCKS C  
+ATOM    628  O   ALA   117      -0.792  -3.525   3.693  1.00  0.18      HCKS O  
+ATOM    629  CB  ALA   117       1.114  -2.376   1.253  1.00  0.21      HCKS C  
+ATOM    630  H   ALA   117      -0.693  -4.469   1.169  1.00  0.20      HCKS H  
+ATOM    631  HA  ALA   117       2.053  -3.994   2.296  1.00  0.18      HCKS H  
+ATOM    632 1HB  ALA   117       0.180  -2.265   0.722  1.00  1.02      HCKS H  
+ATOM    633 2HB  ALA   117       1.281  -1.507   1.872  1.00  1.05      HCKS H  
+ATOM    634 3HB  ALA   117       1.923  -2.474   0.545  1.00  1.00      HCKS H  
+ATOM    635  N   ARG   118       1.140  -2.703   4.391  1.00  0.16      HCKS N  
+ATOM    636  CA  ARG   118       0.593  -2.326   5.721  1.00  0.17      HCKS C  
+ATOM    637  C   ARG   118       0.578  -0.799   5.883  1.00  0.17      HCKS C  
+ATOM    638  O   ARG   118       1.610  -0.153   5.877  1.00  0.19      HCKS O  
+ATOM    639  CB  ARG   118       1.553  -2.976   6.727  1.00  0.21      HCKS C  
+ATOM    640  CG  ARG   118       1.165  -2.593   8.164  1.00  0.23      HCKS C  
+ATOM    641  CD  ARG   118       2.417  -2.192   8.950  1.00  0.28      HCKS C  
+ATOM    642  NE  ARG   118       1.960  -2.002  10.363  1.00  0.92      HCKS N  
+ATOM    643  CZ  ARG   118       2.826  -1.812  11.341  1.00  1.19      HCKS C  
+ATOM    644  NH1 ARG   118       4.118  -1.747  11.113  1.00  1.25      HCKS N  
+ATOM    645  NH2 ARG   118       2.390  -1.682  12.562  1.00  1.61      HCKS N  
+ATOM    646  H   ARG   118       2.078  -2.506   4.190  1.00  0.17      HCKS H  
+ATOM    647  HA  ARG   118      -0.390  -2.726   5.845  1.00  0.18      HCKS H  
+ATOM    648 1HB  ARG   118       1.501  -4.053   6.621  1.00  0.22      HCKS H  
+ATOM    649 2HB  ARG   118       2.561  -2.645   6.525  1.00  0.21      HCKS H  
+ATOM    650 1HG  ARG   118       0.474  -1.765   8.148  1.00  0.22      HCKS H  
+ATOM    651 2HG  ARG   118       0.700  -3.439   8.640  1.00  0.28      HCKS H  
+ATOM    652 1HD  ARG   118       3.147  -2.974   8.911  1.00  0.75      HCKS H  
+ATOM    653 2HD  ARG   118       2.832  -1.274   8.555  1.00  0.60      HCKS H  
+ATOM    654  HE  ARG   118       1.003  -2.035  10.569  1.00  1.30      HCKS H  
+ATOM    655 1HH1 ARG   118       4.475  -1.841  10.185  1.00  1.28      HCKS H  
+ATOM    656 2HH1 ARG   118       4.750  -1.602  11.875  1.00  1.43      HCKS H  
+ATOM    657 1HH2 ARG   118       1.412  -1.727  12.750  1.00  1.78      HCKS H  
+ATOM    658 2HH2 ARG   118       3.037  -1.536  13.311  1.00  1.84      HCKS H  
+ATOM    659  N   SER   119      -0.587  -0.227   6.056  1.00  0.17      HCKS N  
+ATOM    660  CA  SER   119      -0.685   1.250   6.248  1.00  0.19      HCKS C  
+ATOM    661  C   SER   119      -0.216   1.615   7.659  1.00  0.22      HCKS C  
+ATOM    662  O   SER   119      -0.800   1.189   8.647  1.00  0.24      HCKS O  
+ATOM    663  CB  SER   119      -2.167   1.583   6.080  1.00  0.20      HCKS C  
+ATOM    664  OG  SER   119      -2.297   2.900   5.560  1.00  0.32      HCKS O  
+ATOM    665  H   SER   119      -1.399  -0.777   6.077  1.00  0.18      HCKS H  
+ATOM    666  HA  SER   119      -0.101   1.769   5.505  1.00  0.21      HCKS H  
+ATOM    667 1HB  SER   119      -2.620   0.886   5.396  1.00  0.29      HCKS H  
+ATOM    668 2HB  SER   119      -2.661   1.514   7.041  1.00  0.24      HCKS H  
+ATOM    669  HG  SER   119      -3.223   3.147   5.606  1.00  0.88      HCKS H  
+ATOM    670  N   LEU   120       0.831   2.397   7.759  1.00  0.28      HCKS N  
+ATOM    671  CA  LEU   120       1.354   2.797   9.103  1.00  0.34      HCKS C  
+ATOM    672  C   LEU   120       0.375   3.751   9.793  1.00  0.36      HCKS C  
+ATOM    673  O   LEU   120       0.347   3.849  11.005  1.00  0.41      HCKS O  
+ATOM    674  CB  LEU   120       2.684   3.505   8.829  1.00  0.40      HCKS C  
+ATOM    675  CG  LEU   120       3.708   2.490   8.320  1.00  0.41      HCKS C  
+ATOM    676  CD1 LEU   120       4.726   3.198   7.424  1.00  0.50      HCKS C  
+ATOM    677  CD2 LEU   120       4.433   1.858   9.510  1.00  0.42      HCKS C  
+ATOM    678  H   LEU   120       1.275   2.720   6.945  1.00  0.31      HCKS H  
+ATOM    679  HA  LEU   120       1.522   1.925   9.715  1.00  0.36      HCKS H  
+ATOM    680 1HB  LEU   120       2.536   4.274   8.084  1.00  0.45      HCKS H  
+ATOM    681 2HB  LEU   120       3.048   3.953   9.741  1.00  0.45      HCKS H  
+ATOM    682  HG  LEU   120       3.203   1.721   7.753  1.00  0.42      HCKS H  
+ATOM    683 1HD1 LEU   120       5.172   4.020   7.965  1.00  1.00      HCKS H  
+ATOM    684 2HD1 LEU   120       5.495   2.500   7.131  1.00  1.15      HCKS H  
+ATOM    685 3HD1 LEU   120       4.228   3.576   6.543  1.00  1.24      HCKS H  
+ATOM    686 1HD2 LEU   120       4.928   2.629  10.082  1.00  1.08      HCKS H  
+ATOM    687 2HD2 LEU   120       3.718   1.347  10.138  1.00  1.16      HCKS H  
+ATOM    688 3HD2 LEU   120       5.166   1.150   9.151  1.00  1.08      HCKS H  
+ATOM    689  N   ALA   121      -0.426   4.456   9.030  1.00  0.33      HCKS N  
+ATOM    690  CA  ALA   121      -1.409   5.405   9.643  1.00  0.37      HCKS C  
+ATOM    691  C   ALA   121      -2.332   4.660  10.615  1.00  0.36      HCKS C  
+ATOM    692  O   ALA   121      -2.880   5.244  11.531  1.00  0.41      HCKS O  
+ATOM    693  CB  ALA   121      -2.212   5.972   8.470  1.00  0.36      HCKS C  
+ATOM    694  H   ALA   121      -0.382   4.360   8.055  1.00  0.31      HCKS H  
+ATOM    695  HA  ALA   121      -0.893   6.200  10.154  1.00  0.41      HCKS H  
+ATOM    696 1HB  ALA   121      -2.318   5.215   7.707  1.00  1.12      HCKS H  
+ATOM    697 2HB  ALA   121      -3.190   6.274   8.815  1.00  1.05      HCKS H  
+ATOM    698 3HB  ALA   121      -1.695   6.827   8.060  1.00  1.04      HCKS H  
+ATOM    699  N   THR   122      -2.497   3.373  10.424  1.00  0.33      HCKS N  
+ATOM    700  CA  THR   122      -3.373   2.583  11.339  1.00  0.33      HCKS C  
+ATOM    701  C   THR   122      -2.756   1.204  11.629  1.00  0.32      HCKS C  
+ATOM    702  O   THR   122      -3.415   0.330  12.159  1.00  0.33      HCKS O  
+ATOM    703  CB  THR   122      -4.699   2.433  10.589  1.00  0.32      HCKS C  
+ATOM    704  OG1 THR   122      -4.448   1.951   9.276  1.00  0.28      HCKS O  
+ATOM    705  CG2 THR   122      -5.405   3.788  10.512  1.00  0.38      HCKS C  
+ATOM    706  H   THR   122      -2.040   2.925   9.683  1.00  0.31      HCKS H  
+ATOM    707  HA  THR   122      -3.533   3.122  12.258  1.00  0.38      HCKS H  
+ATOM    708  HB  THR   122      -5.331   1.734  11.115  1.00  0.35      HCKS H  
+ATOM    709  HG1 THR   122      -5.236   1.495   8.972  1.00  0.87      HCKS H  
+ATOM    710 1HG2 THR   122      -5.035   4.434  11.296  1.00  1.04      HCKS H  
+ATOM    711 2HG2 THR   122      -5.212   4.242   9.551  1.00  1.07      HCKS H  
+ATOM    712 3HG2 THR   122      -6.469   3.647  10.635  1.00  1.06      HCKS H  
+ATOM    713  N   ARG   123      -1.496   0.998  11.292  1.00  0.32      HCKS N  
+ATOM    714  CA  ARG   123      -0.837  -0.330  11.552  1.00  0.33      HCKS C  
+ATOM    715  C   ARG   123      -1.673  -1.474  10.971  1.00  0.30      HCKS C  
+ATOM    716  O   ARG   123      -1.640  -2.586  11.465  1.00  0.34      HCKS O  
+ATOM    717  CB  ARG   123      -0.760  -0.456  13.077  1.00  0.38      HCKS C  
+ATOM    718  CG  ARG   123       0.237   0.567  13.634  1.00  0.47      HCKS C  
+ATOM    719  CD  ARG   123       1.035  -0.058  14.786  1.00  1.20      HCKS C  
+ATOM    720  NE  ARG   123       0.845   0.865  15.964  1.00  1.38      HCKS N  
+ATOM    721  CZ  ARG   123       1.178   2.139  15.931  1.00  1.83      HCKS C  
+ATOM    722  NH1 ARG   123       1.832   2.648  14.915  1.00  2.42      HCKS N  
+ATOM    723  NH2 ARG   123       0.894   2.900  16.952  1.00  2.44      HCKS N  
+ATOM    724  H   ARG   123      -0.981   1.715  10.870  1.00  0.32      HCKS H  
+ATOM    725  HA  ARG   123       0.163  -0.349  11.129  1.00  0.34      HCKS H  
+ATOM    726 1HB  ARG   123      -1.737  -0.274  13.499  1.00  0.37      HCKS H  
+ATOM    727 2HB  ARG   123      -0.439  -1.452  13.340  1.00  0.40      HCKS H  
+ATOM    728 1HG  ARG   123       0.915   0.870  12.850  1.00  1.06      HCKS H  
+ATOM    729 2HG  ARG   123      -0.300   1.430  13.998  1.00  1.02      HCKS H  
+ATOM    730 1HD  ARG   123       0.633  -1.020  15.041  1.00  1.89      HCKS H  
+ATOM    731 2HD  ARG   123       2.080  -0.159  14.501  1.00  1.88      HCKS H  
+ATOM    732  HE  ARG   123       0.422   0.510  16.774  1.00  1.88      HCKS H  
+ATOM    733 1HH1 ARG   123       2.096   2.074  14.143  1.00  2.57      HCKS H  
+ATOM    734 2HH1 ARG   123       2.068   3.620  14.913  1.00  3.07      HCKS H  
+ATOM    735 1HH2 ARG   123       0.427   2.515  17.748  1.00  2.66      HCKS H  
+ATOM    736 2HH2 ARG   123       1.142   3.869  16.938  1.00  3.03      HCKS H  
+ATOM    737  N   LYS   124      -2.409  -1.214   9.921  1.00  0.26      HCKS N  
+ATOM    738  CA  LYS   124      -3.239  -2.292   9.302  1.00  0.26      HCKS C  
+ATOM    739  C   LYS   124      -2.583  -2.734   8.001  1.00  0.23      HCKS C  
+ATOM    740  O   LYS   124      -1.626  -2.136   7.569  1.00  0.23      HCKS O  
+ATOM    741  CB  LYS   124      -4.599  -1.655   9.022  1.00  0.27      HCKS C  
+ATOM    742  CG  LYS   124      -5.198  -1.112  10.323  1.00  0.35      HCKS C  
+ATOM    743  CD  LYS   124      -6.723  -1.229  10.276  1.00  0.53      HCKS C  
+ATOM    744  CE  LYS   124      -7.271  -1.322  11.702  1.00  1.18      HCKS C  
+ATOM    745  NZ  LYS   124      -8.747  -1.173  11.559  1.00  1.39      HCKS N  
+ATOM    746  H   LYS   124      -2.408  -0.312   9.530  1.00  0.25      HCKS H  
+ATOM    747  HA  LYS   124      -3.349  -3.126   9.978  1.00  0.29      HCKS H  
+ATOM    748 1HB  LYS   124      -4.478  -0.852   8.314  1.00  0.27      HCKS H  
+ATOM    749 2HB  LYS   124      -5.259  -2.396   8.609  1.00  0.28      HCKS H  
+ATOM    750 1HG  LYS   124      -4.819  -1.681  11.160  1.00  0.51      HCKS H  
+ATOM    751 2HG  LYS   124      -4.922  -0.076  10.439  1.00  0.44      HCKS H  
+ATOM    752 1HD  LYS   124      -7.136  -0.358   9.787  1.00  1.19      HCKS H  
+ATOM    753 2HD  LYS   124      -7.000  -2.116   9.727  1.00  1.14      HCKS H  
+ATOM    754 1HE  LYS   124      -7.028  -2.283  12.134  1.00  1.80      HCKS H  
+ATOM    755 2HE  LYS   124      -6.876  -0.524  12.310  1.00  1.82      HCKS H  
+ATOM    756 1HZ  LYS   124      -9.105  -1.885  10.892  1.00  1.74      HCKS H  
+ATOM    757 2HZ  LYS   124      -9.200  -1.310  12.485  1.00  1.84      HCKS H  
+ATOM    758 3HZ  LYS   124      -8.966  -0.220  11.202  1.00  1.79      HCKS H  
+ATOM    759  N   GLU   125      -3.081  -3.766   7.372  1.00  0.23      HCKS N  
+ATOM    760  CA  GLU   125      -2.451  -4.219   6.095  1.00  0.23      HCKS C  
+ATOM    761  C   GLU   125      -3.433  -4.979   5.213  1.00  0.25      HCKS C  
+ATOM    762  O   GLU   125      -4.294  -5.698   5.682  1.00  0.32      HCKS O  
+ATOM    763  CB  GLU   125      -1.274  -5.107   6.511  1.00  0.28      HCKS C  
+ATOM    764  CG  GLU   125      -1.771  -6.287   7.355  1.00  0.36      HCKS C  
+ATOM    765  CD  GLU   125      -1.501  -6.027   8.843  1.00  0.59      HCKS C  
+ATOM    766  OE1 GLU   125      -1.375  -4.871   9.216  1.00  1.15      HCKS O  
+ATOM    767  OE2 GLU   125      -1.426  -6.991   9.585  1.00  1.42      HCKS O  
+ATOM    768  H   GLU   125      -3.860  -4.235   7.735  1.00  0.25      HCKS H  
+ATOM    769  HA  GLU   125      -2.081  -3.371   5.556  1.00  0.22      HCKS H  
+ATOM    770 1HB  GLU   125      -0.781  -5.483   5.626  1.00  0.41      HCKS H  
+ATOM    771 2HB  GLU   125      -0.574  -4.524   7.089  1.00  0.33      HCKS H  
+ATOM    772 1HG  GLU   125      -2.831  -6.421   7.200  1.00  0.63      HCKS H  
+ATOM    773 2HG  GLU   125      -1.248  -7.181   7.052  1.00  0.48      HCKS H  
+ATOM    774  N   GLY   126      -3.288  -4.818   3.925  1.00  0.26      HCKS N  
+ATOM    775  CA  GLY   126      -4.184  -5.516   2.967  1.00  0.29      HCKS C  
+ATOM    776  C   GLY   126      -3.606  -5.392   1.558  1.00  0.26      HCKS C  
+ATOM    777  O   GLY   126      -2.408  -5.428   1.369  1.00  0.29      HCKS O  
+ATOM    778  H   GLY   126      -2.578  -4.234   3.586  1.00  0.28      HCKS H  
+ATOM    779 1HA  GLY   126      -4.258  -6.559   3.240  1.00  0.33      HCKS H  
+ATOM    780 2HA  GLY   126      -5.161  -5.065   2.994  1.00  0.33      HCKS H  
+ATOM    781  N   TYR   127      -4.453  -5.229   0.576  1.00  0.31      HCKS N  
+ATOM    782  CA  TYR   127      -3.980  -5.108  -0.838  1.00  0.30      HCKS C  
+ATOM    783  C   TYR   127      -3.809  -3.638  -1.230  1.00  0.32      HCKS C  
+ATOM    784  O   TYR   127      -4.402  -2.757  -0.637  1.00  0.45      HCKS O  
+ATOM    785  CB  TYR   127      -5.105  -5.721  -1.683  1.00  0.33      HCKS C  
+ATOM    786  CG  TYR   127      -5.356  -7.156  -1.284  1.00  0.30      HCKS C  
+ATOM    787  CD1 TYR   127      -4.405  -8.145  -1.562  1.00  0.44      HCKS C  
+ATOM    788  CD2 TYR   127      -6.548  -7.493  -0.637  1.00  0.29      HCKS C  
+ATOM    789  CE1 TYR   127      -4.650  -9.473  -1.189  1.00  0.50      HCKS C  
+ATOM    790  CE2 TYR   127      -6.794  -8.816  -0.263  1.00  0.37      HCKS C  
+ATOM    791  CZ  TYR   127      -5.845  -9.808  -0.538  1.00  0.45      HCKS C  
+ATOM    792  OH  TYR   127      -6.087 -11.116  -0.169  1.00  0.57      HCKS O  
+ATOM    793  H   TYR   127      -5.406  -5.190   0.766  1.00  0.40      HCKS H  
+ATOM    794  HA  TYR   127      -3.064  -5.659  -0.986  1.00  0.28      HCKS H  
+ATOM    795 1HB  TYR   127      -6.010  -5.152  -1.534  1.00  0.35      HCKS H  
+ATOM    796 2HB  TYR   127      -4.834  -5.684  -2.721  1.00  0.43      HCKS H  
+ATOM    797  HD1 TYR   127      -3.484  -7.885  -2.062  1.00  0.56      HCKS H  
+ATOM    798  HD2 TYR   127      -7.281  -6.730  -0.426  1.00  0.34      HCKS H  
+ATOM    799  HE1 TYR   127      -3.919 -10.238  -1.403  1.00  0.64      HCKS H  
+ATOM    800  HE2 TYR   127      -7.716  -9.071   0.240  1.00  0.46      HCKS H  
+ATOM    801  HH  TYR   127      -5.767 -11.687  -0.872  1.00  1.02      HCKS H  
+ATOM    802  N   ILE   128      -3.021  -3.377  -2.245  1.00  0.29      HCKS N  
+ATOM    803  CA  ILE   128      -2.819  -1.973  -2.712  1.00  0.34      HCKS C  
+ATOM    804  C   ILE   128      -2.543  -1.973  -4.229  1.00  0.33      HCKS C  
+ATOM    805  O   ILE   128      -1.545  -2.517  -4.662  1.00  0.38      HCKS O  
+ATOM    806  CB  ILE   128      -1.603  -1.435  -1.944  1.00  0.35      HCKS C  
+ATOM    807  CG1 ILE   128      -0.381  -2.335  -2.194  1.00  0.33      HCKS C  
+ATOM    808  CG2 ILE   128      -1.922  -1.395  -0.448  1.00  0.43      HCKS C  
+ATOM    809  CD1 ILE   128       0.595  -1.631  -3.140  1.00  0.45      HCKS C  
+ATOM    810  H   ILE   128      -2.572  -4.113  -2.713  1.00  0.34      HCKS H  
+ATOM    811  HA  ILE   128      -3.688  -1.384  -2.480  1.00  0.40      HCKS H  
+ATOM    812  HB  ILE   128      -1.388  -0.431  -2.284  1.00  0.37      HCKS H  
+ATOM    813 1HG1 ILE   128       0.115  -2.543  -1.257  1.00  0.38      HCKS H  
+ATOM    814 2HG1 ILE   128      -0.703  -3.261  -2.643  1.00  0.33      HCKS H  
+ATOM    815 1HG2 ILE   128      -2.953  -1.102  -0.310  1.00  1.06      HCKS H  
+ATOM    816 2HG2 ILE   128      -1.762  -2.373  -0.019  1.00  1.16      HCKS H  
+ATOM    817 3HG2 ILE   128      -1.276  -0.679   0.039  1.00  1.11      HCKS H  
+ATOM    818 1HD1 ILE   128       0.065  -0.889  -3.720  1.00  1.17      HCKS H  
+ATOM    819 2HD1 ILE   128       1.371  -1.150  -2.564  1.00  1.06      HCKS H  
+ATOM    820 3HD1 ILE   128       1.038  -2.357  -3.806  1.00  1.12      HCKS H  
+ATOM    821  N   PRO   129      -3.435  -1.383  -5.003  1.00  0.39      HCKS N  
+ATOM    822  CA  PRO   129      -3.241  -1.343  -6.482  1.00  0.44      HCKS C  
+ATOM    823  C   PRO   129      -1.876  -0.745  -6.854  1.00  0.38      HCKS C  
+ATOM    824  O   PRO   129      -1.634   0.434  -6.692  1.00  0.33      HCKS O  
+ATOM    825  CB  PRO   129      -4.389  -0.460  -6.972  1.00  0.56      HCKS C  
+ATOM    826  CG  PRO   129      -5.428  -0.560  -5.904  1.00  0.63      HCKS C  
+ATOM    827  CD  PRO   129      -4.687  -0.717  -4.605  1.00  0.52      HCKS C  
+ATOM    828  HA  PRO   129      -3.333  -2.327  -6.896  1.00  0.51      HCKS H  
+ATOM    829 1HB  PRO   129      -4.055   0.563  -7.078  1.00  0.60      HCKS H  
+ATOM    830 2HB  PRO   129      -4.780  -0.831  -7.906  1.00  0.62      HCKS H  
+ATOM    831 1HG  PRO   129      -6.037   0.337  -5.886  1.00  0.75      HCKS H  
+ATOM    832 2HG  PRO   129      -6.047  -1.425  -6.075  1.00  0.70      HCKS H  
+ATOM    833 1HD  PRO   129      -4.487   0.251  -4.162  1.00  0.62      HCKS H  
+ATOM    834 2HD  PRO   129      -5.241  -1.343  -3.923  1.00  0.53      HCKS H  
+ATOM    835  N   SER   130      -0.988  -1.568  -7.358  1.00  0.47      HCKS N  
+ATOM    836  CA  SER   130       0.377  -1.084  -7.747  1.00  0.51      HCKS C  
+ATOM    837  C   SER   130       0.307  -0.038  -8.868  1.00  0.49      HCKS C  
+ATOM    838  O   SER   130       1.155   0.830  -8.966  1.00  0.56      HCKS O  
+ATOM    839  CB  SER   130       1.117  -2.325  -8.250  1.00  0.71      HCKS C  
+ATOM    840  OG  SER   130       0.980  -3.372  -7.299  1.00  0.70      HCKS O  
+ATOM    841  H   SER   130      -1.221  -2.513  -7.477  1.00  0.56      HCKS H  
+ATOM    842  HA  SER   130       0.894  -0.687  -6.886  1.00  0.52      HCKS H  
+ATOM    843 1HB  SER   130       0.700  -2.642  -9.191  1.00  0.88      HCKS H  
+ATOM    844 2HB  SER   130       2.163  -2.082  -8.390  1.00  0.80      HCKS H  
+ATOM    845  HG  SER   130       0.768  -4.179  -7.775  1.00  1.11      HCKS H  
+ATOM    846  N   ASN   131      -0.674  -0.133  -9.731  1.00  0.50      HCKS N  
+ATOM    847  CA  ASN   131      -0.778   0.842 -10.865  1.00  0.55      HCKS C  
+ATOM    848  C   ASN   131      -1.194   2.242 -10.375  1.00  0.47      HCKS C  
+ATOM    849  O   ASN   131      -1.103   3.205 -11.113  1.00  0.68      HCKS O  
+ATOM    850  CB  ASN   131      -1.834   0.253 -11.807  1.00  0.65      HCKS C  
+ATOM    851  CG  ASN   131      -3.173   0.117 -11.077  1.00  0.61      HCKS C  
+ATOM    852  OD1 ASN   131      -3.260   0.353  -9.890  1.00  1.08      HCKS O  
+ATOM    853  ND2 ASN   131      -4.231  -0.251 -11.748  1.00  1.07      HCKS N  
+ATOM    854  H   ASN   131      -1.331  -0.857  -9.645  1.00  0.55      HCKS H  
+ATOM    855  HA  ASN   131       0.167   0.905 -11.379  1.00  0.64      HCKS H  
+ATOM    856 1HB  ASN   131      -1.956   0.904 -12.661  1.00  0.70      HCKS H  
+ATOM    857 2HB  ASN   131      -1.511  -0.723 -12.141  1.00  0.76      HCKS H  
+ATOM    858 1HD2 ASN   131      -5.094  -0.341 -11.292  1.00  1.04      HCKS H  
+ATOM    859 2HD2 ASN   131      -4.162  -0.436 -12.708  1.00  1.69      HCKS H  
+ATOM    860  N   TYR   132      -1.641   2.367  -9.147  1.00  0.30      HCKS N  
+ATOM    861  CA  TYR   132      -2.048   3.713  -8.623  1.00  0.39      HCKS C  
+ATOM    862  C   TYR   132      -1.244   4.046  -7.360  1.00  0.34      HCKS C  
+ATOM    863  O   TYR   132      -1.788   4.497  -6.368  1.00  0.38      HCKS O  
+ATOM    864  CB  TYR   132      -3.534   3.589  -8.279  1.00  0.55      HCKS C  
+ATOM    865  CG  TYR   132      -4.361   3.723  -9.540  1.00  0.70      HCKS C  
+ATOM    866  CD1 TYR   132      -4.432   4.954 -10.203  1.00  1.01      HCKS C  
+ATOM    867  CD2 TYR   132      -5.054   2.617 -10.046  1.00  0.99      HCKS C  
+ATOM    868  CE1 TYR   132      -5.196   5.078 -11.369  1.00  1.13      HCKS C  
+ATOM    869  CE2 TYR   132      -5.817   2.742 -11.212  1.00  1.14      HCKS C  
+ATOM    870  CZ  TYR   132      -5.889   3.972 -11.874  1.00  1.04      HCKS C  
+ATOM    871  OH  TYR   132      -6.641   4.094 -13.025  1.00  1.22      HCKS O  
+ATOM    872  H   TYR   132      -1.703   1.581  -8.565  1.00  0.29      HCKS H  
+ATOM    873  HA  TYR   132      -1.905   4.475  -9.377  1.00  0.48      HCKS H  
+ATOM    874 1HB  TYR   132      -3.718   2.628  -7.821  1.00  0.57      HCKS H  
+ATOM    875 2HB  TYR   132      -3.807   4.372  -7.587  1.00  0.65      HCKS H  
+ATOM    876  HD1 TYR   132      -3.898   5.807  -9.816  1.00  1.34      HCKS H  
+ATOM    877  HD2 TYR   132      -5.003   1.668  -9.535  1.00  1.31      HCKS H  
+ATOM    878  HE1 TYR   132      -5.252   6.028 -11.879  1.00  1.50      HCKS H  
+ATOM    879  HE2 TYR   132      -6.351   1.888 -11.602  1.00  1.52      HCKS H  
+ATOM    880  HH  TYR   132      -7.080   4.947 -13.004  1.00  1.60      HCKS H  
+ATOM    881  N   VAL   133       0.045   3.817  -7.388  1.00  0.31      HCKS N  
+ATOM    882  CA  VAL   133       0.883   4.100  -6.186  1.00  0.29      HCKS C  
+ATOM    883  C   VAL   133       2.340   4.336  -6.585  1.00  0.32      HCKS C  
+ATOM    884  O   VAL   133       2.739   4.098  -7.709  1.00  0.35      HCKS O  
+ATOM    885  CB  VAL   133       0.747   2.841  -5.319  1.00  0.31      HCKS C  
+ATOM    886  CG1 VAL   133       1.231   1.611  -6.090  1.00  0.93      HCKS C  
+ATOM    887  CG2 VAL   133       1.566   2.974  -4.036  1.00  0.91      HCKS C  
+ATOM    888  H   VAL   133       0.459   3.448  -8.196  1.00  0.34      HCKS H  
+ATOM    889  HA  VAL   133       0.495   4.949  -5.654  1.00  0.29      HCKS H  
+ATOM    890  HB  VAL   133      -0.285   2.716  -5.061  1.00  0.85      HCKS H  
+ATOM    891 1HG1 VAL   133       2.092   1.873  -6.687  1.00  1.52      HCKS H  
+ATOM    892 2HG1 VAL   133       1.502   0.833  -5.392  1.00  1.53      HCKS H  
+ATOM    893 3HG1 VAL   133       0.441   1.256  -6.734  1.00  1.51      HCKS H  
+ATOM    894 1HG2 VAL   133       1.292   3.884  -3.528  1.00  1.46      HCKS H  
+ATOM    895 2HG2 VAL   133       1.367   2.129  -3.394  1.00  1.53      HCKS H  
+ATOM    896 3HG2 VAL   133       2.615   2.999  -4.282  1.00  1.48      HCKS H  
+ATOM    897  N   ALA   134       3.130   4.789  -5.656  1.00  0.33      HCKS N  
+ATOM    898  CA  ALA   134       4.577   5.038  -5.938  1.00  0.37      HCKS C  
+ATOM    899  C   ALA   134       5.435   4.198  -4.983  1.00  0.35      HCKS C  
+ATOM    900  O   ALA   134       5.348   4.338  -3.778  1.00  0.35      HCKS O  
+ATOM    901  CB  ALA   134       4.784   6.537  -5.692  1.00  0.39      HCKS C  
+ATOM    902  H   ALA   134       2.767   4.958  -4.760  1.00  0.32      HCKS H  
+ATOM    903  HA  ALA   134       4.807   4.795  -6.964  1.00  0.45      HCKS H  
+ATOM    904 1HB  ALA   134       3.844   6.990  -5.411  1.00  1.01      HCKS H  
+ATOM    905 2HB  ALA   134       5.503   6.679  -4.898  1.00  1.13      HCKS H  
+ATOM    906 3HB  ALA   134       5.151   7.001  -6.595  1.00  1.06      HCKS H  
+ATOM    907  N   ARG   135       6.243   3.309  -5.509  1.00  0.41      HCKS N  
+ATOM    908  CA  ARG   135       7.080   2.445  -4.639  1.00  0.46      HCKS C  
+ATOM    909  C   ARG   135       8.467   3.055  -4.406  1.00  0.46      HCKS C  
+ATOM    910  O   ARG   135       9.162   3.417  -5.333  1.00  0.60      HCKS O  
+ATOM    911  CB  ARG   135       7.196   1.137  -5.413  1.00  0.64      HCKS C  
+ATOM    912  CG  ARG   135       7.788   0.075  -4.499  1.00  0.76      HCKS C  
+ATOM    913  CD  ARG   135       7.135  -1.279  -4.785  1.00  1.16      HCKS C  
+ATOM    914  NE  ARG   135       7.774  -1.764  -6.050  1.00  1.30      HCKS N  
+ATOM    915  CZ  ARG   135       7.608  -3.003  -6.472  1.00  1.74      HCKS C  
+ATOM    916  NH1 ARG   135       6.875  -3.865  -5.805  1.00  2.55      HCKS N  
+ATOM    917  NH2 ARG   135       8.185  -3.380  -7.580  1.00  2.00      HCKS N  
+ATOM    918  H   ARG   135       6.285   3.193  -6.473  1.00  0.48      HCKS H  
+ATOM    919  HA  ARG   135       6.585   2.267  -3.699  1.00  0.44      HCKS H  
+ATOM    920 1HB  ARG   135       6.215   0.826  -5.745  1.00  0.82      HCKS H  
+ATOM    921 2HB  ARG   135       7.840   1.276  -6.267  1.00  0.73      HCKS H  
+ATOM    922 1HG  ARG   135       8.851   0.010  -4.673  1.00  1.33      HCKS H  
+ATOM    923 2HG  ARG   135       7.605   0.352  -3.476  1.00  1.37      HCKS H  
+ATOM    924 1HD  ARG   135       7.332  -1.966  -3.975  1.00  1.76      HCKS H  
+ATOM    925 2HD  ARG   135       6.072  -1.158  -4.925  1.00  1.63      HCKS H  
+ATOM    926  HE  ARG   135       8.328  -1.150  -6.578  1.00  1.68      HCKS H  
+ATOM    927 1HH1 ARG   135       6.425  -3.597  -4.955  1.00  2.79      HCKS H  
+ATOM    928 2HH1 ARG   135       6.768  -4.797  -6.151  1.00  3.14      HCKS H  
+ATOM    929 1HH2 ARG   135       8.745  -2.733  -8.098  1.00  2.04      HCKS H  
+ATOM    930 2HH2 ARG   135       8.067  -4.316  -7.912  1.00  2.55      HCKS H  
+ATOM    931  N   VAL   136       8.868   3.154  -3.164  1.00  0.42      HCKS N  
+ATOM    932  CA  VAL   136      10.205   3.720  -2.827  1.00  0.51      HCKS C  
+ATOM    933  C   VAL   136      10.908   2.817  -1.801  1.00  0.68      HCKS C  
+ATOM    934  O   VAL   136      10.272   2.062  -1.083  1.00  0.60      HCKS O  
+ATOM    935  CB  VAL   136       9.921   5.095  -2.216  1.00  0.70      HCKS C  
+ATOM    936  CG1 VAL   136       9.295   6.010  -3.269  1.00  0.81      HCKS C  
+ATOM    937  CG2 VAL   136       8.965   4.962  -1.024  1.00  0.86      HCKS C  
+ATOM    938  H   VAL   136       8.289   2.851  -2.442  1.00  0.43      HCKS H  
+ATOM    939  HA  VAL   136      10.809   3.828  -3.716  1.00  0.52      HCKS H  
+ATOM    940  HB  VAL   136      10.846   5.521  -1.882  1.00  0.79      HCKS H  
+ATOM    941 1HG1 VAL   136       9.593   5.682  -4.254  1.00  1.41      HCKS H  
+ATOM    942 2HG1 VAL   136       8.219   5.971  -3.186  1.00  1.35      HCKS H  
+ATOM    943 3HG1 VAL   136       9.632   7.024  -3.110  1.00  1.22      HCKS H  
+ATOM    944 1HG2 VAL   136       9.280   4.139  -0.398  1.00  1.37      HCKS H  
+ATOM    945 2HG2 VAL   136       8.977   5.876  -0.450  1.00  1.40      HCKS H  
+ATOM    946 3HG2 VAL   136       7.963   4.777  -1.385  1.00  1.26      HCKS H  
+ATOM    947  N   ASP   137      12.213   2.891  -1.731  1.00  1.08      HCKS N  
+ATOM    948  CA  ASP   137      12.973   2.063  -0.777  1.00  1.44      HCKS C  
+ATOM    949  C   ASP   137      13.630   2.962   0.277  1.00  2.28      HCKS C  
+ATOM    950  O   ASP   137      14.838   3.105   0.317  1.00  2.85      HCKS O  
+ATOM    951  CB  ASP   137      14.034   1.355  -1.637  1.00  2.07      HCKS C  
+ATOM    952  CG  ASP   137      14.932   2.383  -2.347  1.00  2.87      HCKS C  
+ATOM    953  OD1 ASP   137      14.675   3.571  -2.217  1.00  3.37      HCKS O  
+ATOM    954  OD2 ASP   137      15.863   1.960  -3.011  1.00  3.41      HCKS O  
+ATOM    955  H   ASP   137      12.699   3.491  -2.307  1.00  1.20      HCKS H  
+ATOM    956  HA  ASP   137      12.329   1.336  -0.309  1.00  0.98      HCKS H  
+ATOM    957 1HB  ASP   137      14.645   0.724  -1.010  1.00  2.45      HCKS H  
+ATOM    958 2HB  ASP   137      13.539   0.746  -2.379  1.00  2.23      HCKS H  
+ATOM    959  N   SER   138      12.840   3.569   1.125  1.00  2.90      HCKS N  
+ATOM    960  CA  SER   138      13.408   4.462   2.179  1.00  3.84      HCKS C  
+ATOM    961  C   SER   138      12.813   4.111   3.545  1.00  4.46      HCKS C  
+ATOM    962  O   SER   138      11.711   4.555   3.820  1.00  4.79      HCKS O  
+ATOM    963  CB  SER   138      13.001   5.874   1.762  1.00  4.60      HCKS C  
+ATOM    964  OG  SER   138      13.962   6.802   2.247  1.00  5.44      HCKS O  
+ATOM    965  OXT SER   138      13.471   3.406   4.292  1.00  4.99      HCKS O  
+ATOM    966  H   SER   138      11.871   3.437   1.069  1.00  3.04      HCKS H  
+ATOM    967  HA  SER   138      14.483   4.380   2.202  1.00  3.94      HCKS H  
+ATOM    968 1HB  SER   138      12.960   5.936   0.687  1.00  4.53      HCKS H  
+ATOM    969 2HB  SER   138      12.025   6.102   2.171  1.00  4.91      HCKS H  
+ATOM    970  HG  SER   138      14.773   6.678   1.749  1.00  5.78      HCKS H  
+TER     971      SER   138                                                      
+MASTER       64    0    0    1    5    0    0    6  970    1    0    6          
+END                                                                             
+</PRE></BODY></HTML>
